@@ -1,0 +1,20 @@
+<svg width="1200" height="1500" viewBox="0 0 1200 1500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="1500" fill="#FFF4EA"/>
+  <rect x="68" y="68" width="1064" height="1364" rx="38" fill="#FFFCF8"/>
+  <rect x="136" y="210" width="928" height="1038" rx="24" fill="url(#a)"/>
+  <circle cx="312" cy="408" r="120" fill="#FFB38D"/>
+  <circle cx="620" cy="520" r="170" fill="#F6D183"/>
+  <circle cx="832" cy="396" r="132" fill="#E6A0AF"/>
+  <rect x="250" y="618" width="620" height="310" rx="155" fill="#F0A58C"/>
+  <text x="164" y="176" fill="#22181F" font-size="92" font-family="Georgia, serif">BIRTHDAY ISSUE</text>
+  <text x="164" y="1286" fill="#6F4258" font-size="44" font-family="Arial, sans-serif" letter-spacing="8">FUN  STYLE  CELEBRATION</text>
+  <rect x="164" y="1060" width="320" height="16" rx="8" fill="#7C5D54"/>
+  <rect x="164" y="1104" width="400" height="16" rx="8" fill="#7C5D54" fill-opacity=".75"/>
+  <rect x="164" y="1148" width="282" height="16" rx="8" fill="#7C5D54" fill-opacity=".5"/>
+  <defs>
+    <linearGradient id="a" x1="136" y1="210" x2="1064" y2="1248" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF7F0"/>
+      <stop offset="1" stop-color="#F6D4C8"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,20 @@
+<svg width="1200" height="1500" viewBox="0 0 1200 1500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="1500" fill="#F8EEE6"/>
+  <rect x="68" y="68" width="1064" height="1364" rx="36" fill="#FFF9F5"/>
+  <rect x="140" y="208" width="920" height="1040" rx="28" fill="url(#a)"/>
+  <circle cx="904" cy="394" r="128" fill="#F4D6D0"/>
+  <rect x="228" y="420" width="540" height="516" rx="200" fill="#E8C3B9"/>
+  <rect x="430" y="352" width="364" height="604" rx="182" fill="#D5A89E"/>
+  <rect x="176" y="112" width="358" height="44" rx="22" fill="#6F4258"/>
+  <rect x="176" y="992" width="276" height="16" rx="8" fill="#7D5B55"/>
+  <rect x="176" y="1034" width="400" height="16" rx="8" fill="#7D5B55" fill-opacity=".75"/>
+  <rect x="176" y="1076" width="352" height="16" rx="8" fill="#7D5B55" fill-opacity=".55"/>
+  <text x="176" y="180" fill="#22181F" font-size="84" font-family="Georgia, serif">THE WEDDING ISSUE</text>
+  <text x="176" y="1288" fill="#6F4258" font-size="46" font-family="Arial, sans-serif" letter-spacing="8">ROMANCE  DETAILS  STORY</text>
+  <defs>
+    <linearGradient id="a" x1="140" y1="208" x2="1060" y2="1248" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FDF7F1"/>
+      <stop offset="1" stop-color="#F1DED1"/>
+    </linearGradient>
+  </defs>
+</svg>

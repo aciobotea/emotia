@@ -1,0 +1,14 @@
+<svg width="1200" height="1500" viewBox="0 0 1200 1500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="1500" fill="#F7EFE7"/>
+  <rect x="96" y="96" width="1008" height="1308" rx="34" fill="#FFFDFB"/>
+  <text x="176" y="228" fill="#1F1821" font-size="72" font-family="Georgia, serif">Tributes &amp; Toasts</text>
+  <rect x="176" y="286" width="850" height="2" fill="#D9C5B5"/>
+  <rect x="176" y="350" width="280" height="820" rx="140" fill="#DCC7B9"/>
+  <rect x="492" y="350" width="534" height="256" rx="24" fill="#EEDFD2"/>
+  <rect x="492" y="640" width="534" height="530" rx="24" fill="#F7EEE7"/>
+  <rect x="542" y="430" width="300" height="16" rx="8" fill="#6F4258"/>
+  <rect x="542" y="472" width="362" height="16" rx="8" fill="#6F4258" fill-opacity=".7"/>
+  <rect x="542" y="734" width="360" height="16" rx="8" fill="#7C5D54"/>
+  <rect x="542" y="776" width="322" height="16" rx="8" fill="#7C5D54" fill-opacity=".75"/>
+  <rect x="542" y="818" width="410" height="16" rx="8" fill="#7C5D54" fill-opacity=".55"/>
+</svg>

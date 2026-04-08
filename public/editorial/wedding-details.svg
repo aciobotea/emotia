@@ -1,0 +1,17 @@
+<svg width="1200" height="1500" viewBox="0 0 1200 1500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="1500" fill="#FDF5ED"/>
+  <rect x="96" y="96" width="1008" height="1308" rx="34" fill="#FFFDFC"/>
+  <text x="174" y="218" fill="#22181F" font-size="72" font-family="Georgia, serif">Wedding Details</text>
+  <rect x="176" y="272" width="848" height="2" fill="#D9B7AA"/>
+  <rect x="176" y="336" width="340" height="430" rx="26" fill="#F3E0D7"/>
+  <rect x="564" y="336" width="460" height="180" rx="26" fill="#E9C8BF"/>
+  <rect x="564" y="548" width="460" height="218" rx="26" fill="#F7EDE5"/>
+  <rect x="176" y="824" width="848" height="420" rx="26" fill="#F8EEE8"/>
+  <rect x="214" y="876" width="220" height="16" rx="8" fill="#7D5B55"/>
+  <rect x="214" y="918" width="260" height="16" rx="8" fill="#7D5B55" fill-opacity=".7"/>
+  <rect x="214" y="960" width="236" height="16" rx="8" fill="#7D5B55" fill-opacity=".5"/>
+  <rect x="612" y="382" width="240" height="16" rx="8" fill="#6F4258"/>
+  <rect x="612" y="424" width="284" height="16" rx="8" fill="#6F4258" fill-opacity=".7"/>
+  <rect x="612" y="620" width="328" height="16" rx="8" fill="#7D5B55"/>
+  <rect x="612" y="662" width="286" height="16" rx="8" fill="#7D5B55" fill-opacity=".7"/>
+</svg>

@@ -1,0 +1,12 @@
+<svg width="1200" height="1500" viewBox="0 0 1200 1500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="1500" fill="#FFF3F7"/>
+  <rect x="96" y="96" width="1008" height="1308" rx="34" fill="#FFFDFE"/>
+  <rect x="176" y="220" width="280" height="880" rx="140" fill="#E8A9C1"/>
+  <rect x="496" y="220" width="530" height="404" rx="24" fill="#F8E6EE"/>
+  <rect x="496" y="668" width="530" height="432" rx="24" fill="#F5D6C5"/>
+  <text x="514" y="328" fill="#1F1821" font-size="66" font-family="Georgia, serif">Bride Tribe</text>
+  <rect x="516" y="382" width="260" height="16" rx="8" fill="#6F4258"/>
+  <rect x="516" y="424" width="328" height="16" rx="8" fill="#6F4258" fill-opacity=".72"/>
+  <rect x="516" y="818" width="288" height="16" rx="8" fill="#7C5D54"/>
+  <rect x="516" y="860" width="356" height="16" rx="8" fill="#7C5D54" fill-opacity=".72"/>
+</svg>

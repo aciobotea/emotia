@@ -1,0 +1,13 @@
+<svg width="1200" height="1500" viewBox="0 0 1200 1500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="1500" fill="#FFF7FA"/>
+  <rect x="88" y="88" width="1024" height="1324" rx="32" fill="#FFFFFF"/>
+  <rect x="154" y="156" width="892" height="262" rx="24" fill="#F7D6E2"/>
+  <rect x="154" y="474" width="274" height="870" rx="24" fill="#F2BBD0"/>
+  <rect x="462" y="474" width="584" height="260" rx="24" fill="#FBE9F0"/>
+  <rect x="462" y="790" width="584" height="554" rx="24" fill="#F8E1D2"/>
+  <text x="184" y="286" fill="#1F1821" font-size="72" font-family="Georgia, serif">Weekend Plan</text>
+  <rect x="184" y="342" width="360" height="16" rx="8" fill="#6F4258"/>
+  <rect x="502" y="866" width="280" height="14" rx="7" fill="#7C5D54"/>
+  <rect x="502" y="908" width="336" height="14" rx="7" fill="#7C5D54" fill-opacity=".7"/>
+  <rect x="502" y="950" width="244" height="14" rx="7" fill="#7C5D54" fill-opacity=".5"/>
+</svg>

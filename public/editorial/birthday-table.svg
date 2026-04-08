@@ -1,0 +1,12 @@
+<svg width="1200" height="1500" viewBox="0 0 1200 1500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="1500" fill="#FFF3EA"/>
+  <rect x="96" y="96" width="1008" height="1308" rx="34" fill="#FFFDFB"/>
+  <rect x="176" y="220" width="850" height="330" rx="26" fill="#F7C8B9"/>
+  <rect x="176" y="606" width="268" height="530" rx="22" fill="#F5DD9C"/>
+  <rect x="466" y="606" width="268" height="530" rx="22" fill="#F9E6D6"/>
+  <rect x="756" y="606" width="268" height="530" rx="22" fill="#F4B7C7"/>
+  <text x="176" y="182" fill="#1F1821" font-size="72" font-family="Georgia, serif">Styled For The Table</text>
+  <rect x="222" y="694" width="170" height="16" rx="8" fill="#7C5D54"/>
+  <rect x="512" y="694" width="170" height="16" rx="8" fill="#7C5D54"/>
+  <rect x="802" y="694" width="170" height="16" rx="8" fill="#7C5D54"/>
+</svg>

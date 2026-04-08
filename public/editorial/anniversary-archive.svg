@@ -1,0 +1,13 @@
+<svg width="1200" height="1500" viewBox="0 0 1200 1500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="1500" fill="#FBF6F1"/>
+  <rect x="92" y="92" width="1016" height="1316" rx="32" fill="#FFFFFF"/>
+  <rect x="156" y="158" width="410" height="520" rx="24" fill="#E3D1C4"/>
+  <rect x="632" y="158" width="412" height="520" rx="24" fill="#C8AB96"/>
+  <rect x="156" y="746" width="888" height="598" rx="24" fill="#F3E8DE"/>
+  <text x="182" y="840" fill="#1F1821" font-size="66" font-family="Georgia, serif">Then &amp; Now</text>
+  <rect x="184" y="900" width="322" height="14" rx="7" fill="#7C5D54"/>
+  <rect x="184" y="942" width="362" height="14" rx="7" fill="#7C5D54" fill-opacity=".7"/>
+  <rect x="184" y="984" width="280" height="14" rx="7" fill="#7C5D54" fill-opacity=".5"/>
+  <rect x="184" y="1088" width="678" height="14" rx="7" fill="#7C5D54" fill-opacity=".4"/>
+  <rect x="184" y="1130" width="628" height="14" rx="7" fill="#7C5D54" fill-opacity=".35"/>
+</svg>
