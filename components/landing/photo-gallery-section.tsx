@@ -40,7 +40,7 @@ export function PhotoGallerySection() {
               description="Am lăsat aici un spațiu editorial în care poți încărca ulterior pozele tale. Layout-ul este gândit să arate premium atât cu fotografii de detaliu, cât și cu cadre mari, emoționale."
             />
 
-            <div className="mt-8 rounded-[2rem] border border-white/65 bg-[linear-gradient(180deg,rgba(255,255,255,0.72),rgba(247,237,225,0.66))] p-6 shadow-[0_18px_45px_rgba(96,74,54,0.08)]">
+            <div className="mt-8 rounded-[2rem] border border-white/65 bg-[linear-gradient(180deg,rgba(255,255,255,0.72),rgba(247,237,225,0.66))] p-6 shadow-[0_18px_45px_rgba(74,18,37,0.08)]">
               <div className="flex items-center gap-3 text-mocha">
                 <Sparkles className="h-5 w-5" strokeWidth={1.8} />
                 <p className="text-sm font-semibold uppercase tracking-[0.24em]">
@@ -57,9 +57,9 @@ export function PhotoGallerySection() {
             {gallerySlots.map((slot) => (
               <div
                 key={slot.label}
-                className={`group relative overflow-hidden rounded-[2.2rem] border border-white/55 shadow-[0_24px_60px_rgba(96,74,54,0.11)] ${slot.className}`}
+                className={`group relative overflow-hidden rounded-[2.2rem] border border-white/55 shadow-[0_24px_60px_rgba(74,18,37,0.11)] ${slot.className}`}
               >
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.4),transparent_30%),linear-gradient(180deg,transparent,rgba(43,28,20,0.18))]" />
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.4),transparent_30%),linear-gradient(180deg,transparent,rgba(74,18,37,0.18))]" />
                 <div className="absolute inset-5 rounded-[1.7rem] border border-white/45 bg-white/10 shadow-[inset_0_1px_0_rgba(255,255,255,0.24)]" />
 
                 <div className="relative flex h-full flex-col justify-between p-6 lg:p-7">

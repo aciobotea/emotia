@@ -72,8 +72,8 @@ export function HowItWorksSection() {
                   <div
                     className={
                       isLast
-                        ? "relative h-full overflow-hidden rounded-[2.2rem] border border-white/65 bg-[linear-gradient(180deg,rgba(255,250,244,0.98),rgba(236,223,206,0.82))] p-6 shadow-[0_24px_65px_rgba(96,74,54,0.1)]"
-                        : "relative h-full overflow-hidden rounded-[2rem] border border-white/65 bg-[linear-gradient(180deg,rgba(255,255,255,0.78),rgba(250,243,235,0.6))] p-6 shadow-[0_18px_46px_rgba(96,74,54,0.08)]"
+                        ? "relative h-full overflow-hidden rounded-[2.2rem] border border-white/65 bg-[linear-gradient(180deg,rgba(255,250,244,0.98),rgba(236,223,206,0.82))] p-6 shadow-[0_24px_65px_rgba(74,18,37,0.1)]"
+                        : "relative h-full overflow-hidden rounded-[2rem] border border-white/65 bg-[linear-gradient(180deg,rgba(255,255,255,0.78),rgba(250,243,235,0.6))] p-6 shadow-[0_18px_46px_rgba(74,18,37,0.08)]"
                     }
                   >
                     <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.62),transparent_28%)]" />

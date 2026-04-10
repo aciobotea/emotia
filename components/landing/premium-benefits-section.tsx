@@ -56,7 +56,7 @@ export function PremiumBenefitsSection() {
                 return (
                   <Card
                     key={benefit.title}
-                    className="relative overflow-hidden rounded-[2.1rem] border-white/55 bg-[linear-gradient(180deg,rgba(255,255,255,0.72),rgba(255,248,240,0.52))] shadow-[0_24px_55px_rgba(96,74,54,0.1)] backdrop-blur-sm"
+                    className="relative overflow-hidden rounded-[2.1rem] border-white/55 bg-[linear-gradient(180deg,rgba(255,255,255,0.72),rgba(255,248,240,0.52))] shadow-[0_24px_55px_rgba(74,18,37,0.1)] backdrop-blur-sm"
                   >
                     <CardContent className="p-7 lg:p-8">
                       <div className="flex items-start justify-between gap-4">

@@ -8,7 +8,7 @@ type PricingGridProps = {
 export function PricingGrid({ event }: PricingGridProps) {
   return (
     <section className="px-6 py-16 lg:px-10 lg:py-20">
-      <div className="mx-auto max-w-7xl rounded-[2.5rem] border border-wine/10 bg-[#20181f] p-8 text-paper shadow-[0_24px_90px_rgba(35,20,31,0.24)] lg:p-12">
+      <div className="mx-auto max-w-7xl rounded-[2.5rem] border border-wine/10 bg-[#22131c] p-8 text-paper shadow-[0_24px_90px_rgba(58,18,36,0.24)] lg:p-12">
         <div className="max-w-2xl">
           <p className="text-xs font-semibold uppercase tracking-[0.34em] text-paper/60">
             Pricing for {event.shortName.toLowerCase()}

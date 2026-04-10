@@ -14,7 +14,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-30 border-b border-olive/8 bg-[rgba(255,251,244,0.82)] backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
         <Link href="/" className="flex items-center gap-4">
-          <span className="flex h-12 w-12 items-center justify-center rounded-full border border-olive/12 bg-[linear-gradient(180deg,rgba(255,255,255,0.88),rgba(236,226,209,0.72))] text-[10px] font-semibold uppercase tracking-[0.35em] text-olive-deep shadow-[0_8px_24px_rgba(96,74,54,0.08)]">
+          <span className="flex h-12 w-12 items-center justify-center rounded-full border border-olive/12 bg-[linear-gradient(180deg,rgba(255,255,255,0.88),rgba(236,226,209,0.72))] text-[10px] font-semibold uppercase tracking-[0.35em] text-olive-deep shadow-[0_8px_24px_rgba(74,18,37,0.08)]">
             EM
           </span>
           <span>

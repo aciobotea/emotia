@@ -5,7 +5,7 @@ import { PricingInquiryForm } from "@/components/landing/pricing-inquiry-form";
 export function PricingPreviewSection() {
   return (
     <section id="pricing" className="px-6 py-18 lg:px-10 lg:py-24">
-      <div className="mx-auto max-w-7xl rounded-[2.5rem] border border-wine/10 bg-[linear-gradient(180deg,#5a4136,#463229)] px-8 py-10 text-paper shadow-[0_22px_80px_rgba(78,56,45,0.24)] lg:px-12 lg:py-14">
+      <div className="mx-auto max-w-7xl rounded-[2.5rem] border border-wine/10 bg-[linear-gradient(180deg,#6d1e36,#4a1225)] px-8 py-10 text-paper shadow-[0_22px_80px_rgba(74,18,37,0.24)] lg:px-12 lg:py-14">
         <div className="max-w-2xl">
           <h2 className="font-display text-4xl leading-none text-paper sm:text-5xl">
             Prețuri adaptate fiecărei comenzi.
@@ -39,7 +39,7 @@ export function PricingPreviewSection() {
 
         <div
           id="pricing-inquiry"
-          className="mt-10 grid gap-8 rounded-[2.2rem] border border-white/10 bg-[linear-gradient(180deg,rgba(108,80,67,0.94),rgba(84,61,53,0.96))] p-6 shadow-[0_18px_50px_rgba(78,56,45,0.18)] lg:grid-cols-[0.78fr_1.22fr] lg:p-8"
+          className="mt-10 grid gap-8 rounded-[2.2rem] border border-white/10 bg-[linear-gradient(180deg,rgba(122,31,58,0.94),rgba(73,18,35,0.96))] p-6 shadow-[0_18px_50px_rgba(74,18,37,0.18)] lg:grid-cols-[0.78fr_1.22fr] lg:p-8"
         >
           <div className="max-w-md">
             <p className="text-xs font-semibold uppercase tracking-[0.35em] text-paper/58">

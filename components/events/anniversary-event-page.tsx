@@ -71,7 +71,7 @@ export function AnniversaryEventPage() {
                   </Button>
                 </div>
 
-                <div className="mt-14 max-w-2xl rounded-[2rem] border border-white/60 bg-white/42 p-6 shadow-[0_16px_38px_rgba(96,74,54,0.07)] backdrop-blur-sm">
+                <div className="mt-14 max-w-2xl rounded-[2rem] border border-white/60 bg-white/42 p-6 shadow-[0_16px_38px_rgba(74,18,37,0.07)] backdrop-blur-sm">
                   <p className="font-display text-[2.1rem] italic leading-tight text-gold">
                     Un gest surprinzător și emoționant pentru persoana iubită.
                   </p>
@@ -104,7 +104,7 @@ export function AnniversaryEventPage() {
       <section className="px-6 py-8 lg:px-10 lg:py-12">
         <div className="mx-auto max-w-[88rem]">
           <div className="grid gap-6 lg:grid-cols-2">
-            <div className="rounded-[2.8rem] border border-white/60 bg-[linear-gradient(145deg,rgba(255,249,248,0.95),rgba(245,235,229,0.82),rgba(231,215,208,0.66))] p-8 shadow-[0_24px_75px_rgba(96,74,54,0.08)] lg:min-h-[26rem] lg:p-12">
+            <div className="rounded-[2.8rem] border border-white/60 bg-[linear-gradient(145deg,rgba(255,249,248,0.95),rgba(245,235,229,0.82),rgba(231,215,208,0.66))] p-8 shadow-[0_24px_75px_rgba(74,18,37,0.08)] lg:min-h-[26rem] lg:p-12">
               <h2 className="max-w-xl font-display text-4xl leading-tight text-olive-deep sm:text-5xl">
                 Ce este?
               </h2>
@@ -118,7 +118,7 @@ export function AnniversaryEventPage() {
               </p>
             </div>
 
-            <div className="rounded-[2.8rem] border border-white/60 bg-[linear-gradient(145deg,rgba(112,79,74,0.96),rgba(145,106,98,0.84),rgba(200,163,149,0.64))] p-8 shadow-[0_24px_75px_rgba(96,74,54,0.1)] lg:min-h-[26rem] lg:p-12">
+            <div className="rounded-[2.8rem] border border-white/60 bg-[linear-gradient(145deg,rgba(110,27,52,0.96),rgba(148,72,96,0.84),rgba(200,163,149,0.64))] p-8 shadow-[0_24px_75px_rgba(74,18,37,0.1)] lg:min-h-[26rem] lg:p-12">
               <h2 className="max-w-xl font-display text-4xl leading-tight text-ivory sm:text-5xl">
                 De ce funcționează atât de bine?
               </h2>
@@ -136,7 +136,7 @@ export function AnniversaryEventPage() {
       </section>
 
       <section className="px-6 py-10 lg:px-10 lg:py-14">
-        <div className="mx-auto max-w-[88rem] rounded-[3rem] border border-white/60 bg-[linear-gradient(145deg,rgba(255,249,248,0.95),rgba(244,233,228,0.82),rgba(231,215,208,0.66))] p-8 shadow-[0_28px_90px_rgba(96,74,54,0.11)] lg:p-12">
+        <div className="mx-auto max-w-[88rem] rounded-[3rem] border border-white/60 bg-[linear-gradient(145deg,rgba(255,249,248,0.95),rgba(244,233,228,0.82),rgba(231,215,208,0.66))] p-8 shadow-[0_28px_90px_rgba(74,18,37,0.11)] lg:p-12">
           <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.35em] text-wine">
@@ -177,7 +177,7 @@ export function AnniversaryEventPage() {
               fotografiile și amintirile voastre.
             </p>
 
-            <Card className="mt-6 rounded-[2.4rem] border-white/70 bg-[linear-gradient(180deg,rgba(255,255,255,0.86),rgba(247,238,227,0.7))] shadow-[0_20px_60px_rgba(96,74,54,0.09)]">
+            <Card className="mt-6 rounded-[2.4rem] border-white/70 bg-[linear-gradient(180deg,rgba(255,255,255,0.86),rgba(247,238,227,0.7))] shadow-[0_20px_60px_rgba(74,18,37,0.09)]">
               <CardContent className="p-8 lg:p-10">
                 <h2 className="font-display text-[2.8rem] font-semibold leading-tight text-olive-deep">
                   Ce conține?
@@ -207,7 +207,7 @@ export function AnniversaryEventPage() {
           </div>
 
           <div className="space-y-6">
-            <Card className="rounded-[2.4rem] border-white/70 bg-[linear-gradient(180deg,rgba(255,255,255,0.86),rgba(247,238,227,0.7))] shadow-[0_20px_60px_rgba(96,74,54,0.09)]">
+            <Card className="rounded-[2.4rem] border-white/70 bg-[linear-gradient(180deg,rgba(255,255,255,0.86),rgba(247,238,227,0.7))] shadow-[0_20px_60px_rgba(74,18,37,0.09)]">
               <CardContent className="p-8 lg:p-10">
                 <div className="flex h-14 w-14 items-center justify-center rounded-[1.2rem] border border-white/70 bg-[linear-gradient(180deg,rgba(255,255,255,0.94),rgba(247,236,222,0.72))] text-gold shadow-[0_10px_24px_rgba(176,138,82,0.16)]">
                   <Heart className="h-6 w-6" strokeWidth={1.85} />
@@ -224,7 +224,7 @@ export function AnniversaryEventPage() {
               </CardContent>
             </Card>
 
-            <Card className="rounded-[2.4rem] border-white/70 bg-[linear-gradient(180deg,rgba(255,255,255,0.86),rgba(247,238,227,0.7))] shadow-[0_20px_60px_rgba(96,74,54,0.09)]">
+            <Card className="rounded-[2.4rem] border-white/70 bg-[linear-gradient(180deg,rgba(255,255,255,0.86),rgba(247,238,227,0.7))] shadow-[0_20px_60px_rgba(74,18,37,0.09)]">
               <CardContent className="p-8 lg:p-10">
                 <div className="flex h-14 w-14 items-center justify-center rounded-[1.2rem] border border-white/70 bg-[linear-gradient(180deg,rgba(255,255,255,0.94),rgba(247,236,222,0.72))] text-gold shadow-[0_10px_24px_rgba(176,138,82,0.16)]">
                   <Sparkles className="h-6 w-6" strokeWidth={1.85} />
@@ -241,7 +241,7 @@ export function AnniversaryEventPage() {
               </CardContent>
             </Card>
 
-            <Card className="rounded-[2.4rem] border-white/70 bg-[linear-gradient(180deg,rgba(255,255,255,0.86),rgba(247,238,227,0.7))] shadow-[0_20px_60px_rgba(96,74,54,0.09)]">
+            <Card className="rounded-[2.4rem] border-white/70 bg-[linear-gradient(180deg,rgba(255,255,255,0.86),rgba(247,238,227,0.7))] shadow-[0_20px_60px_rgba(74,18,37,0.09)]">
               <CardContent className="p-8 lg:p-10">
                 <div className="flex h-14 w-14 items-center justify-center rounded-[1.2rem] border border-white/70 bg-[linear-gradient(180deg,rgba(255,255,255,0.94),rgba(247,236,222,0.72))] text-gold shadow-[0_10px_24px_rgba(176,138,82,0.16)]">
                   <PenSquare className="h-6 w-6" strokeWidth={1.85} />
@@ -266,7 +266,7 @@ export function AnniversaryEventPage() {
       </section>
 
       <section className="px-6 pb-20 pt-8 lg:px-10 lg:pb-28 lg:pt-10">
-        <div className="mx-auto max-w-[88rem] rounded-[2.7rem] border border-wine/10 bg-[linear-gradient(180deg,#5a4136,#463229)] px-8 py-10 text-paper shadow-[0_22px_80px_rgba(78,56,45,0.24)] lg:px-12 lg:py-14">
+        <div className="mx-auto max-w-[88rem] rounded-[2.7rem] border border-wine/10 bg-[linear-gradient(180deg,#6d1e36,#4a1225)] px-8 py-10 text-paper shadow-[0_22px_80px_rgba(74,18,37,0.24)] lg:px-12 lg:py-14">
           <div className="max-w-2xl">
             <h2 className="font-display text-4xl leading-none text-paper sm:text-5xl">
               Prețuri orientative pentru revista aniversară
@@ -294,7 +294,7 @@ export function AnniversaryEventPage() {
 
           <div
             id="pricing-inquiry"
-            className="mt-10 grid gap-8 rounded-[2.2rem] border border-white/10 bg-[linear-gradient(180deg,rgba(108,80,67,0.94),rgba(84,61,53,0.96))] p-6 shadow-[0_18px_50px_rgba(78,56,45,0.18)] lg:grid-cols-[0.78fr_1.22fr] lg:p-8"
+            className="mt-10 grid gap-8 rounded-[2.2rem] border border-white/10 bg-[linear-gradient(180deg,rgba(122,31,58,0.94),rgba(73,18,35,0.96))] p-6 shadow-[0_18px_50px_rgba(74,18,37,0.18)] lg:grid-cols-[0.78fr_1.22fr] lg:p-8"
           >
             <div className="max-w-md">
               <p className="text-xs font-semibold uppercase tracking-[0.35em] text-paper/58">

@@ -9,7 +9,7 @@ export function HeroSection() {
       <div className="absolute inset-x-0 top-6 -z-10 mx-auto h-80 max-w-6xl rounded-full bg-sand/70 blur-3xl" />
 
       <div className="mx-auto max-w-7xl">
-        <Card className="overflow-hidden rounded-[2.75rem] border-olive/10 bg-[linear-gradient(145deg,rgba(255,251,244,0.9),rgba(236,226,209,0.64),rgba(223,208,187,0.58))] shadow-[0_28px_95px_rgba(96,74,54,0.12)]">
+        <Card className="overflow-hidden rounded-[2.75rem] border-olive/10 bg-[linear-gradient(145deg,rgba(255,251,244,0.9),rgba(236,226,209,0.64),rgba(223,208,187,0.58))] shadow-[0_28px_95px_rgba(74,18,37,0.12)]">
           <CardContent className="grid gap-0 p-0 lg:grid-cols-[1.08fr_0.92fr]">
             <div className="flex flex-col justify-between p-8 sm:p-10 lg:p-14">
               <div>
@@ -47,7 +47,7 @@ export function HeroSection() {
             </div>
 
             <div className="relative min-h-[420px] overflow-hidden border-t border-olive/10 lg:min-h-[640px] lg:border-l lg:border-t-0">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.28),transparent_22%),linear-gradient(145deg,rgba(76,53,40,0.96),rgba(130,105,91,0.84),rgba(176,138,82,0.72))]" />
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.28),transparent_22%),linear-gradient(145deg,rgba(92,20,43,0.96),rgba(137,47,76,0.84),rgba(176,138,82,0.72))]" />
               <video
                 className="absolute inset-0 h-full w-full object-cover opacity-18 mix-blend-soft-light"
                 autoPlay
@@ -62,7 +62,7 @@ export function HeroSection() {
                   <span className="rounded-full border border-white/16 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.32em] text-ivory">
                     Cover video
                   </span>
-                  <span className="rounded-full border border-white/14 bg-[rgba(92,68,56,0.32)] px-4 py-2 text-xs font-medium text-ivory/84">
+                  <span className="rounded-full border border-white/14 bg-[rgba(127,34,57,0.32)] px-4 py-2 text-xs font-medium text-ivory/84">
                     Inlocuieste `public/hero-cover.mp4`
                   </span>
                 </div>

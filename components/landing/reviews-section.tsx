@@ -40,7 +40,7 @@ export function ReviewsSection() {
               variant="outline"
               size="icon"
               onClick={showPrevious}
-              className="h-12 w-12 border-white/70 bg-white/72 text-olive-deep shadow-[0_10px_24px_rgba(96,74,54,0.08)] hover:bg-white"
+              className="h-12 w-12 border-white/70 bg-white/72 text-olive-deep shadow-[0_10px_24px_rgba(74,18,37,0.08)] hover:bg-white"
             >
               <ChevronLeft className="h-5 w-5" />
             </Button>
@@ -49,7 +49,7 @@ export function ReviewsSection() {
               variant="outline"
               size="icon"
               onClick={showNext}
-              className="h-12 w-12 border-white/70 bg-white/72 text-olive-deep shadow-[0_10px_24px_rgba(96,74,54,0.08)] hover:bg-white"
+              className="h-12 w-12 border-white/70 bg-white/72 text-olive-deep shadow-[0_10px_24px_rgba(74,18,37,0.08)] hover:bg-white"
             >
               <ChevronRight className="h-5 w-5" />
             </Button>
@@ -60,7 +60,7 @@ export function ReviewsSection() {
               {visibleReviews.map((review, index) => (
                 <Card
                   key={`${review.name}-${activeIndex}-${index}`}
-                  className="overflow-hidden rounded-[2.1rem] border-white/70 bg-[linear-gradient(180deg,rgba(255,255,255,0.86),rgba(247,238,227,0.7))] shadow-[0_24px_65px_rgba(96,74,54,0.1)]"
+                  className="overflow-hidden rounded-[2.1rem] border-white/70 bg-[linear-gradient(180deg,rgba(255,255,255,0.86),rgba(247,238,227,0.7))] shadow-[0_24px_65px_rgba(74,18,37,0.1)]"
                 >
                   <CardContent className="flex h-full flex-col p-8">
                     <div className="flex items-center justify-between gap-4">

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { Heart, Package, PenSquare } from "lucide-react";
 import { PricingInquiryForm } from "@/components/landing/pricing-inquiry-form";
@@ -26,12 +25,39 @@ const specifications = [
   "Design editorial, tip revistă reală",
 ];
 
+const weddingImages = [
+  {
+    src: "/wedding/IMG_0512.HEIC",
+    alt: "Cadru editorial de nuntă 1.",
+  },
+  {
+    src: "/wedding/IMG_0516.HEIC",
+    alt: "Cadru editorial de nuntă 2.",
+  },
+  {
+    src: "/wedding/IMG_0520.HEIC",
+    alt: "Cadru editorial de nuntă 3.",
+  },
+  {
+    src: "/wedding/IMG_0522.HEIC",
+    alt: "Cadru editorial de nuntă 4.",
+  },
+  {
+    src: "/wedding/IMG_0524.HEIC",
+    alt: "Cadru editorial de nuntă 5.",
+  },
+  {
+    src: "/wedding/IMG_0526.HEIC",
+    alt: "Cadru editorial de nuntă 6.",
+  },
+];
+
 export function WeddingEventPage() {
   return (
     <main className="flex-1">
       <section className="px-6 pb-16 pt-12 lg:px-10 lg:pb-24 lg:pt-18">
         <div className="mx-auto max-w-[88rem]">
-          <div className="relative overflow-hidden rounded-[3rem] border border-white/55 bg-[linear-gradient(145deg,rgba(255,251,245,0.98),rgba(241,229,212,0.88),rgba(224,204,178,0.7))] shadow-[0_32px_110px_rgba(96,74,54,0.13)]">
+          <div className="relative overflow-hidden rounded-[3rem] border border-white/55 bg-[linear-gradient(145deg,rgba(255,251,245,0.98),rgba(241,229,212,0.88),rgba(224,204,178,0.7))] shadow-[0_32px_110px_rgba(74,18,37,0.13)]">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.74),transparent_28%),radial-gradient(circle_at_bottom_right,rgba(176,138,82,0.16),transparent_26%)]" />
 
             <div className="relative grid gap-0 lg:grid-cols-[1.02fr_0.98fr]">
@@ -65,7 +91,7 @@ export function WeddingEventPage() {
                   </Button>
                 </div>
 
-                <div className="mt-14 max-w-2xl rounded-[2rem] border border-white/60 bg-white/42 p-6 shadow-[0_16px_38px_rgba(96,74,54,0.07)] backdrop-blur-sm">
+                <div className="mt-14 max-w-2xl rounded-[2rem] border border-white/60 bg-white/42 p-6 shadow-[0_16px_38px_rgba(74,18,37,0.07)] backdrop-blur-sm">
                   <p className="font-display text-[2.1rem] italic leading-tight text-gold">
                     Un obiect făcut pentru ziua voastră, dar păstrat mult după ea.
                   </p>
@@ -73,7 +99,20 @@ export function WeddingEventPage() {
               </div>
 
               <div className="relative min-h-[430px] border-t border-white/40 lg:border-l lg:border-t-0 lg:min-h-[720px]">
-                <div className="absolute inset-0 bg-[linear-gradient(145deg,rgba(101,72,60,0.96),rgba(138,107,91,0.82),rgba(191,158,116,0.62))]" />
+                <div className="absolute inset-0 bg-[linear-gradient(145deg,rgba(92,20,43,0.96),rgba(137,47,76,0.84),rgba(176,138,82,0.72))]" />
+                <video
+                  className="absolute inset-0 h-full w-full object-cover opacity-52"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  controls={false}
+                >
+                  <source
+                    src="/wedding/copy_FDE8F59B-BCB2-4671-9333-D7E65BCA5606.mov"
+                    type="video/quicktime"
+                  />
+                </video>
                 <div className="absolute inset-8 rounded-[2.3rem] border border-white/18 bg-[linear-gradient(180deg,rgba(255,255,255,0.12),rgba(255,255,255,0.04))] shadow-[inset_0_1px_0_rgba(255,255,255,0.18)]" />
                 <div className="relative flex h-full flex-col justify-between p-8 sm:p-10">
                   <span className="self-start rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.32em] text-ivory">
@@ -92,13 +131,30 @@ export function WeddingEventPage() {
               </div>
             </div>
           </div>
+
+          <div className="mt-6 grid gap-6 sm:grid-cols-2">
+            <div className="relative min-h-[24rem] overflow-hidden rounded-[2.5rem] border border-white/60 shadow-[0_20px_60px_rgba(74,18,37,0.1)]">
+              <img
+                src={weddingImages[4].src}
+                alt={weddingImages[4].alt}
+                className="h-full w-full object-cover"
+              />
+            </div>
+            <div className="relative min-h-[24rem] overflow-hidden rounded-[2.5rem] border border-white/60 shadow-[0_20px_60px_rgba(74,18,37,0.1)]">
+              <img
+                src={weddingImages[5].src}
+                alt={weddingImages[5].alt}
+                className="h-full w-full object-cover"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
       <section className="px-6 py-8 lg:px-10 lg:py-12">
         <div className="mx-auto max-w-[88rem]">
           <div className="grid gap-6 lg:grid-cols-2">
-            <div className="rounded-[2.8rem] border border-white/60 bg-[linear-gradient(145deg,rgba(255,251,245,0.94),rgba(244,234,220,0.8),rgba(228,210,187,0.62))] p-8 shadow-[0_24px_75px_rgba(96,74,54,0.08)] lg:min-h-[38rem] lg:p-12">
+            <div className="rounded-[2.8rem] border border-white/60 bg-[linear-gradient(145deg,rgba(255,251,245,0.94),rgba(244,234,220,0.8),rgba(228,210,187,0.62))] p-8 shadow-[0_24px_75px_rgba(74,18,37,0.08)] lg:min-h-[38rem] lg:p-12">
               <div className="flex h-full flex-col justify-center">
                 <h2 className="max-w-xl font-display text-4xl leading-tight text-olive-deep sm:text-5xl">
                   Mărturia care nu se uită.
@@ -119,29 +175,33 @@ export function WeddingEventPage() {
               </div>
             </div>
 
-            <div className="relative min-h-[28rem] overflow-hidden rounded-[2.8rem] border border-white/60 shadow-[0_24px_75px_rgba(96,74,54,0.1)] lg:min-h-[38rem]">
-              <Image
-                src="/wedding/wedding-1.png"
-                alt="Revista nunții ținută în mâini, la masă."
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 50vw"
+            <div className="relative min-h-[28rem] overflow-hidden rounded-[2.8rem] border border-white/60 shadow-[0_24px_75px_rgba(74,18,37,0.1)] lg:min-h-[38rem]">
+              <img
+                src={weddingImages[0].src}
+                alt={weddingImages[0].alt}
+                className="h-full w-full object-cover"
               />
             </div>
           </div>
 
           <div className="mt-6 grid gap-6 lg:grid-cols-2">
-            <div className="relative min-h-[30rem] overflow-hidden rounded-[2.8rem] border border-white/60 shadow-[0_24px_75px_rgba(96,74,54,0.1)]">
-              <Image
-                src="/wedding/wedding-5.png"
-                alt="Revista nunții așezată pe masă, în decorul evenimentului."
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 50vw"
-              />
+            <div className="relative min-h-[30rem] overflow-hidden rounded-[2.8rem] border border-white/60 shadow-[0_24px_75px_rgba(74,18,37,0.1)]">
+              <video
+                className="h-full w-full object-cover"
+                autoPlay
+                muted
+                loop
+                playsInline
+                controls
+              >
+                <source
+                  src="/wedding/copy_1F4CAA26-DF1D-4EF3-83A5-6520C217D7C4.mov"
+                  type="video/quicktime"
+                />
+              </video>
             </div>
 
-            <div className="rounded-[2.8rem] border border-white/60 bg-[linear-gradient(145deg,rgba(255,251,245,0.95),rgba(244,233,218,0.82),rgba(228,210,187,0.64))] p-8 text-center shadow-[0_24px_75px_rgba(96,74,54,0.08)] lg:min-h-[30rem] lg:p-12">
+            <div className="rounded-[2.8rem] border border-white/60 bg-[linear-gradient(145deg,rgba(255,251,245,0.95),rgba(244,233,218,0.82),rgba(228,210,187,0.64))] p-8 text-center shadow-[0_24px_75px_rgba(74,18,37,0.08)] lg:min-h-[30rem] lg:p-12">
               <div className="flex h-full flex-col items-center justify-center">
                 <h2 className="max-w-xl font-display text-4xl leading-tight text-olive-deep sm:text-5xl">
                   Mai mult decât un decor.
@@ -159,7 +219,7 @@ export function WeddingEventPage() {
           </div>
 
           <div className="mt-6 grid gap-6 lg:grid-cols-[0.92fr_1.08fr]">
-            <div className="rounded-[2.8rem] border border-white/60 bg-[linear-gradient(145deg,rgba(255,251,245,0.95),rgba(244,233,218,0.82),rgba(228,210,187,0.64))] p-8 shadow-[0_24px_75px_rgba(96,74,54,0.08)] lg:p-12">
+            <div className="rounded-[2.8rem] border border-white/60 bg-[linear-gradient(145deg,rgba(255,251,245,0.95),rgba(244,233,218,0.82),rgba(228,210,187,0.64))] p-8 shadow-[0_24px_75px_rgba(74,18,37,0.08)] lg:p-12">
               <h2 className="max-w-lg font-display text-4xl leading-tight text-olive-deep sm:text-5xl">
                 O mărturie pe care o iei cu tine.
               </h2>
@@ -173,39 +233,33 @@ export function WeddingEventPage() {
             </div>
 
             <div className="grid gap-6 sm:grid-cols-2">
-              <div className="relative min-h-[23rem] overflow-hidden rounded-[2.3rem] border border-white/60 shadow-[0_20px_60px_rgba(96,74,54,0.1)]">
-                <Image
-                  src="/wedding/wedding-2.png"
-                  alt="Invitată ținând revista nunții în mână."
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+              <div className="relative min-h-[23rem] overflow-hidden rounded-[2.3rem] border border-white/60 shadow-[0_20px_60px_rgba(74,18,37,0.1)]">
+                <img
+                  src={weddingImages[1].src}
+                  alt={weddingImages[1].alt}
+                  className="h-full w-full object-cover"
                 />
               </div>
-              <div className="relative min-h-[23rem] overflow-hidden rounded-[2.3rem] border border-white/60 shadow-[0_20px_60px_rgba(96,74,54,0.1)]">
-                <Image
-                  src="/wedding/wedding-4.png"
-                  alt="Revista nunții așezată în farfurie, cu eticheta de mulțumire."
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+              <div className="relative min-h-[23rem] overflow-hidden rounded-[2.3rem] border border-white/60 shadow-[0_20px_60px_rgba(74,18,37,0.1)]">
+                <img
+                  src={weddingImages[2].src}
+                  alt={weddingImages[2].alt}
+                  className="h-full w-full object-cover"
                 />
               </div>
             </div>
           </div>
 
           <div className="mt-6 grid gap-6 lg:grid-cols-[1.05fr_0.95fr]">
-            <div className="relative min-h-[28rem] overflow-hidden rounded-[2.8rem] border border-white/60 shadow-[0_24px_75px_rgba(96,74,54,0.1)]">
-              <Image
-                src="/wedding/wedding-3.png"
-                alt="Colaj cu revista nunții în mai multe momente ale evenimentului."
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 55vw"
+            <div className="relative min-h-[28rem] overflow-hidden rounded-[2.8rem] border border-white/60 shadow-[0_24px_75px_rgba(74,18,37,0.1)]">
+              <img
+                src={weddingImages[3].src}
+                alt={weddingImages[3].alt}
+                className="h-full w-full object-cover"
               />
             </div>
 
-            <div className="rounded-[2.8rem] border border-white/60 bg-[linear-gradient(145deg,rgba(255,251,245,0.95),rgba(244,233,218,0.82),rgba(228,210,187,0.64))] p-8 shadow-[0_24px_75px_rgba(96,74,54,0.08)] lg:p-12">
+            <div className="rounded-[2.8rem] border border-white/60 bg-[linear-gradient(145deg,rgba(255,251,245,0.95),rgba(244,233,218,0.82),rgba(228,210,187,0.64))] p-8 shadow-[0_24px_75px_rgba(74,18,37,0.08)] lg:p-12">
               <h2 className="max-w-lg font-display text-4xl leading-tight text-olive-deep sm:text-5xl">
                 O amintire care rămâne.
               </h2>
@@ -223,7 +277,7 @@ export function WeddingEventPage() {
       </section>
 
       <section className="px-6 py-10 lg:px-10 lg:py-14">
-        <div className="mx-auto max-w-[88rem] rounded-[3rem] border border-white/60 bg-[linear-gradient(145deg,rgba(255,251,245,0.95),rgba(240,228,211,0.82),rgba(223,205,180,0.68))] p-8 shadow-[0_28px_90px_rgba(96,74,54,0.11)] lg:p-12">
+        <div className="mx-auto max-w-[88rem] rounded-[3rem] border border-white/60 bg-[linear-gradient(145deg,rgba(255,251,245,0.95),rgba(240,228,211,0.82),rgba(223,205,180,0.68))] p-8 shadow-[0_28px_90px_rgba(74,18,37,0.11)] lg:p-12">
           <div className="grid gap-10 lg:grid-cols-[0.92fr_1.08fr] lg:items-start">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.35em] text-wine">
@@ -265,7 +319,7 @@ export function WeddingEventPage() {
               fotografiile și povestea voastră.
             </p>
 
-            <Card className="mt-6 rounded-[2.4rem] border-white/70 bg-[linear-gradient(180deg,rgba(255,255,255,0.86),rgba(247,238,227,0.7))] shadow-[0_20px_60px_rgba(96,74,54,0.09)]">
+            <Card className="mt-6 rounded-[2.4rem] border-white/70 bg-[linear-gradient(180deg,rgba(255,255,255,0.86),rgba(247,238,227,0.7))] shadow-[0_20px_60px_rgba(74,18,37,0.09)]">
               <CardContent className="p-8 lg:p-10">
                 <h2 className="font-display text-[2.8rem] font-semibold leading-tight text-olive-deep">
                   Ce conține?
@@ -296,7 +350,7 @@ export function WeddingEventPage() {
           </div>
 
           <div className="space-y-6">
-            <Card className="rounded-[2.4rem] border-white/70 bg-[linear-gradient(180deg,rgba(255,255,255,0.86),rgba(247,238,227,0.7))] shadow-[0_20px_60px_rgba(96,74,54,0.09)]">
+            <Card className="rounded-[2.4rem] border-white/70 bg-[linear-gradient(180deg,rgba(255,255,255,0.86),rgba(247,238,227,0.7))] shadow-[0_20px_60px_rgba(74,18,37,0.09)]">
               <CardContent className="p-8 lg:p-10">
                 <div className="flex h-14 w-14 items-center justify-center rounded-[1.2rem] border border-white/70 bg-[linear-gradient(180deg,rgba(255,255,255,0.94),rgba(247,236,222,0.72))] text-gold shadow-[0_10px_24px_rgba(176,138,82,0.16)]">
                   <Heart className="h-6 w-6" strokeWidth={1.85} />
@@ -314,7 +368,7 @@ export function WeddingEventPage() {
               </CardContent>
             </Card>
 
-            <Card className="rounded-[2.4rem] border-white/70 bg-[linear-gradient(180deg,rgba(255,255,255,0.86),rgba(247,238,227,0.7))] shadow-[0_20px_60px_rgba(96,74,54,0.09)]">
+            <Card className="rounded-[2.4rem] border-white/70 bg-[linear-gradient(180deg,rgba(255,255,255,0.86),rgba(247,238,227,0.7))] shadow-[0_20px_60px_rgba(74,18,37,0.09)]">
               <CardContent className="p-8 lg:p-10">
                 <div className="flex h-14 w-14 items-center justify-center rounded-[1.2rem] border border-white/70 bg-[linear-gradient(180deg,rgba(255,255,255,0.94),rgba(247,236,222,0.72))] text-gold shadow-[0_10px_24px_rgba(176,138,82,0.16)]">
                   <PenSquare className="h-6 w-6" strokeWidth={1.85} />
@@ -339,7 +393,7 @@ export function WeddingEventPage() {
       </section>
 
       <section className="px-6 py-10 lg:px-10 lg:py-14">
-        <div className="mx-auto max-w-[88rem] rounded-[3rem] border border-white/60 bg-[linear-gradient(145deg,rgba(255,251,245,0.95),rgba(240,228,211,0.82),rgba(223,205,180,0.68))] p-8 shadow-[0_28px_90px_rgba(96,74,54,0.11)] lg:p-12">
+        <div className="mx-auto max-w-[88rem] rounded-[3rem] border border-white/60 bg-[linear-gradient(145deg,rgba(255,251,245,0.95),rgba(240,228,211,0.82),rgba(223,205,180,0.68))] p-8 shadow-[0_28px_90px_rgba(74,18,37,0.11)] lg:p-12">
           <div className="grid gap-10 lg:grid-cols-[0.88fr_1.12fr] lg:items-center">
             <div>
               <div className="flex h-14 w-14 items-center justify-center rounded-[1.2rem] border border-white/70 bg-[linear-gradient(180deg,rgba(255,255,255,0.94),rgba(247,236,222,0.72))] text-gold shadow-[0_10px_24px_rgba(176,138,82,0.16)]">
@@ -381,7 +435,7 @@ export function WeddingEventPage() {
       </section>
 
       <section className="px-6 pb-20 pt-8 lg:px-10 lg:pb-28 lg:pt-10">
-        <div className="mx-auto max-w-[88rem] rounded-[2.7rem] border border-wine/10 bg-[linear-gradient(180deg,#5a4136,#463229)] px-8 py-10 text-paper shadow-[0_22px_80px_rgba(78,56,45,0.24)] lg:px-12 lg:py-14">
+        <div className="mx-auto max-w-[88rem] rounded-[2.7rem] border border-wine/10 bg-[linear-gradient(180deg,#6d1e36,#4a1225)] px-8 py-10 text-paper shadow-[0_22px_80px_rgba(74,18,37,0.24)] lg:px-12 lg:py-14">
           <div className="max-w-2xl">
             <h2 className="font-display text-4xl leading-none text-paper sm:text-5xl">
               Prețuri orientative pentru revista nunții
@@ -415,7 +469,7 @@ export function WeddingEventPage() {
 
           <div
             id="pricing-inquiry"
-            className="mt-10 grid gap-8 rounded-[2.2rem] border border-white/10 bg-[linear-gradient(180deg,rgba(108,80,67,0.94),rgba(84,61,53,0.96))] p-6 shadow-[0_18px_50px_rgba(78,56,45,0.18)] lg:grid-cols-[0.78fr_1.22fr] lg:p-8"
+            className="mt-10 grid gap-8 rounded-[2.2rem] border border-white/10 bg-[linear-gradient(180deg,rgba(122,31,58,0.94),rgba(73,18,35,0.96))] p-6 shadow-[0_18px_50px_rgba(74,18,37,0.18)] lg:grid-cols-[0.78fr_1.22fr] lg:p-8"
           >
             <div className="max-w-md">
               <p className="text-xs font-semibold uppercase tracking-[0.35em] text-paper/58">

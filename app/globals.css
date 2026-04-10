@@ -8,11 +8,11 @@
   --color-paper: #f4ebdf;
   --color-sand: #dccab7;
   --color-rose: #cfb8ab;
-  --color-wine: #8b7158;
+  --color-wine: #8b2740;
   --color-gold: #b08a52;
-  --color-mocha: #82695b;
+  --color-mocha: #8b5364;
   --color-olive: #b08a52;
-  --color-olive-deep: #4c3528;
+  --color-olive-deep: #5a1830;
   --color-ivory: #fffaf4;
   --color-stone: #bda692;
   --color-background: var(--background);
@@ -41,7 +41,7 @@
   --card-foreground: #24181d;
   --popover: #fffaf4;
   --popover-foreground: #24181d;
-  --primary: #6e4d37;
+  --primary: #7f2239;
   --primary-foreground: #fffaf4;
   --secondary: #e3d2bf;
   --secondary-foreground: #24181d;
@@ -49,8 +49,8 @@
   --muted-foreground: rgba(36, 24, 29, 0.7);
   --accent: #d8c2b2;
   --accent-foreground: #24181d;
-  --border: rgba(110, 77, 55, 0.14);
-  --input: rgba(110, 77, 55, 0.14);
+  --border: rgba(127, 34, 57, 0.14);
+  --input: rgba(127, 34, 57, 0.14);
   --ring: #b08a52;
 }
 
@@ -84,5 +84,5 @@ img {
 }
 
 ::selection {
-  background: rgba(154, 123, 79, 0.2);
+  background: rgba(127, 34, 57, 0.2);
 }
