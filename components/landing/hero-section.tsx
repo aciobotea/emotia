@@ -6,16 +6,16 @@ import { Card, CardContent } from "@/components/ui/card";
 export function HeroSection() {
   return (
     <section className="relative overflow-hidden px-6 pb-14 pt-10 lg:px-10 lg:pb-18 lg:pt-14">
-      <div className="absolute inset-x-0 top-6 -z-10 mx-auto h-80 max-w-6xl rounded-full bg-sand/70 blur-3xl" />
+      <div className="absolute inset-x-0 top-6 -z-10 mx-auto h-80 max-w-6xl rounded-full bg-sand/85 blur-3xl" />
 
       <div className="mx-auto max-w-7xl">
-        <Card className="overflow-hidden rounded-[2.75rem] border-olive/10 bg-[linear-gradient(145deg,rgba(255,251,244,0.9),rgba(236,226,209,0.64),rgba(223,208,187,0.58))] shadow-[0_28px_95px_rgba(74,18,37,0.12)]">
+        <Card className="overflow-hidden rounded-[2.75rem] border-wine/20 bg-[linear-gradient(145deg,rgba(255,253,247,0.96),rgba(235,227,215,0.84),rgba(203,186,160,0.68))] shadow-[0_28px_90px_rgba(115,20,53,0.14)]">
           <CardContent className="grid gap-0 p-0 lg:grid-cols-[1.08fr_0.92fr]">
             <div className="flex flex-col justify-between p-8 sm:p-10 lg:p-14">
               <div>
                 <Badge
                   variant="outline"
-                  className="border-olive/14 bg-[rgba(255,251,244,0.84)] px-4 py-1.5 uppercase tracking-[0.35em] text-mocha"
+                  className="border-olive/14 bg-[rgba(255,252,244,0.92)] px-4 py-1.5 uppercase tracking-[0.35em] text-mocha"
                 >
                   Reviste personalizate premium
                 </Badge>
@@ -31,7 +31,7 @@ export function HeroSection() {
                 <Button
                   asChild
                   size="lg"
-                  className="bg-[linear-gradient(180deg,#f5e6d0,#e7cba4)] px-7 text-olive-deep shadow-[0_12px_30px_rgba(176,138,82,0.18)] hover:bg-[linear-gradient(180deg,#f8ebd8,#ead1ae)]"
+                  className="bg-[linear-gradient(180deg,#c43868,#8f173d)] px-7 text-white shadow-[0_14px_32px_rgba(139,31,65,0.32)] hover:bg-[linear-gradient(180deg,#cf4d78,#a41f4f)]"
                 >
                   <Link href="/#events">Descoperă colecțiile</Link>
                 </Button>
@@ -39,7 +39,7 @@ export function HeroSection() {
                   asChild
                   size="lg"
                   variant="outline"
-                  className="border-[#e4c79f] bg-[linear-gradient(180deg,#fff8ef,#f2dec0)] px-7 text-olive-deep shadow-[0_10px_24px_rgba(176,138,82,0.12)] hover:border-[#dcb887] hover:bg-[linear-gradient(180deg,#fffaf3,#f4e3c7)]"
+                  className="border-[#b0936c] bg-[linear-gradient(180deg,#fffdf4,#e6dbc8)] px-7 text-olive-deep shadow-[0_10px_24px_rgba(126,88,24,0.16)] hover:border-[#9f7f56] hover:bg-[linear-gradient(180deg,#fffdf8,#d8c4a6)]"
                 >
                   <Link href="/#pricing">Cere ofertă</Link>
                 </Button>
@@ -47,7 +47,7 @@ export function HeroSection() {
             </div>
 
             <div className="relative min-h-[420px] overflow-hidden border-t border-olive/10 lg:min-h-[640px] lg:border-l lg:border-t-0">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.28),transparent_22%),linear-gradient(145deg,rgba(92,20,43,0.96),rgba(137,47,76,0.84),rgba(176,138,82,0.72))]" />
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.24),transparent_22%),linear-gradient(145deg,rgba(92,12,39,0.98),rgba(143,23,61,0.92),rgba(205,65,111,0.78))]" />
               <video
                 className="absolute inset-0 h-full w-full object-cover opacity-18 mix-blend-soft-light"
                 autoPlay
@@ -62,8 +62,8 @@ export function HeroSection() {
                   <span className="rounded-full border border-white/16 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.32em] text-ivory">
                     Cover video
                   </span>
-                  <span className="rounded-full border border-white/14 bg-[rgba(127,34,57,0.32)] px-4 py-2 text-xs font-medium text-ivory/84">
-                    Inlocuieste `public/hero-cover.mp4`
+                  <span className="rounded-full border border-white/14 bg-[rgba(139,31,65,0.34)] px-4 py-2 text-xs font-medium text-ivory/84">
+                    Înlocuiește `public/hero-cover.mp4`
                   </span>
                 </div>
 
@@ -72,7 +72,7 @@ export function HeroSection() {
                     Premium presentation
                   </p>
                   <p className="mt-4 font-display text-4xl leading-tight text-ivory sm:text-5xl">
-                    Un cover cinematic, facut sa vanda emotie din primul ecran.
+                    Un cover cinematic, făcut să vândă emoție din primul ecran.
                   </p>
                 </div>
               </div>

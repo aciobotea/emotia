@@ -6,25 +6,25 @@ const gallerySlots = [
     label: "Cadru 01",
     note: "Copertă sau fotografie statement",
     className:
-      "md:col-span-2 md:row-span-2 min-h-[24rem] bg-[linear-gradient(145deg,rgba(118,88,69,0.94),rgba(176,138,82,0.74),rgba(245,232,214,0.62))]",
+      "md:col-span-2 md:row-span-2 min-h-[24rem] bg-[linear-gradient(145deg,rgba(108,26,52,0.94),rgba(160,59,96,0.8),rgba(246,214,225,0.68))]",
   },
   {
     label: "Cadru 02",
     note: "Detalii, texturi, close-up",
     className:
-      "min-h-[15rem] bg-[linear-gradient(160deg,rgba(255,252,246,0.96),rgba(232,213,187,0.92),rgba(185,155,117,0.7))]",
+      "min-h-[15rem] bg-[linear-gradient(160deg,rgba(255,250,251,0.96),rgba(238,205,217,0.92),rgba(188,71,108,0.76))]",
   },
   {
     label: "Cadru 03",
     note: "Moment emoțional",
     className:
-      "min-h-[15rem] bg-[linear-gradient(160deg,rgba(241,225,207,0.96),rgba(210,183,158,0.84),rgba(116,88,73,0.78))]",
+      "min-h-[15rem] bg-[linear-gradient(160deg,rgba(245,230,236,0.96),rgba(223,177,194,0.88),rgba(108,26,52,0.8))]",
   },
   {
     label: "Cadru 04",
     note: "Pagină interioară sau spread",
     className:
-      "min-h-[18rem] md:col-span-2 bg-[linear-gradient(145deg,rgba(255,249,241,0.98),rgba(230,213,194,0.92),rgba(187,158,128,0.7))]",
+      "min-h-[18rem] md:col-span-2 bg-[linear-gradient(145deg,rgba(255,249,251,0.98),rgba(236,208,220,0.92),rgba(182,67,107,0.76))]",
   },
 ];
 
@@ -40,7 +40,7 @@ export function PhotoGallerySection() {
               description="Am lăsat aici un spațiu editorial în care poți încărca ulterior pozele tale. Layout-ul este gândit să arate premium atât cu fotografii de detaliu, cât și cu cadre mari, emoționale."
             />
 
-            <div className="mt-8 rounded-[2rem] border border-white/65 bg-[linear-gradient(180deg,rgba(255,255,255,0.72),rgba(247,237,225,0.66))] p-6 shadow-[0_18px_45px_rgba(74,18,37,0.08)]">
+            <div className="mt-8 rounded-[2rem] border border-white/65 bg-[linear-gradient(180deg,rgba(255,255,255,0.74),rgba(248,231,238,0.7))] p-6 shadow-[0_18px_45px_rgba(91,35,56,0.1)]">
               <div className="flex items-center gap-3 text-mocha">
                 <Sparkles className="h-5 w-5" strokeWidth={1.8} />
                 <p className="text-sm font-semibold uppercase tracking-[0.24em]">
@@ -57,9 +57,9 @@ export function PhotoGallerySection() {
             {gallerySlots.map((slot) => (
               <div
                 key={slot.label}
-                className={`group relative overflow-hidden rounded-[2.2rem] border border-white/55 shadow-[0_24px_60px_rgba(74,18,37,0.11)] ${slot.className}`}
+                className={`group relative overflow-hidden rounded-[2.2rem] border border-white/55 shadow-[0_24px_60px_rgba(91,35,56,0.12)] ${slot.className}`}
               >
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.4),transparent_30%),linear-gradient(180deg,transparent,rgba(74,18,37,0.18))]" />
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.4),transparent_30%),linear-gradient(180deg,transparent,rgba(43,28,20,0.18))]" />
                 <div className="absolute inset-5 rounded-[1.7rem] border border-white/45 bg-white/10 shadow-[inset_0_1px_0_rgba(255,255,255,0.24)]" />
 
                 <div className="relative flex h-full flex-col justify-between p-6 lg:p-7">

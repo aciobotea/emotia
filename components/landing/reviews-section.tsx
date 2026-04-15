@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
-import { SectionHeading } from "@/components/shared/section-heading";
 import { reviews } from "@/data/site";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -23,14 +22,18 @@ export function ReviewsSection() {
 
   return (
     <section id="reviews" className="px-6 py-18 lg:px-10 lg:py-24">
-      <div className="mx-auto max-w-[88rem]">
+      <div className="mx-auto max-w-[88rem] rounded-[3rem] border border-wine/14 bg-[linear-gradient(180deg,#741833,#531123)] px-6 py-12 text-paper shadow-[0_28px_90px_rgba(91,35,56,0.2)] lg:px-10 lg:py-16">
         <div className="mx-auto max-w-3xl text-center">
-          <SectionHeading
-            eyebrow="Recenzii"
-            title="Ce spun cei care au ales să transforme un cadou într-o amintire."
-            description="Câteva reacții reale, despre cum se simte produsul atunci când ajunge în mâinile celor pentru care a fost creat."
-            align="center"
-          />
+          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.35em] text-paper/70">
+            Recenzii
+          </p>
+          <h2 className="font-display text-4xl leading-none text-white sm:text-5xl">
+            Ce spun cei care au ales să transforme un cadou într-o amintire.
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-white/82 sm:text-lg">
+            Câteva reacții reale, despre cum se simte produsul atunci când ajunge în mâinile celor
+            pentru care a fost creat.
+          </p>
         </div>
 
         <div className="mx-auto mt-12 max-w-6xl">
@@ -40,7 +43,7 @@ export function ReviewsSection() {
               variant="outline"
               size="icon"
               onClick={showPrevious}
-              className="h-12 w-12 border-white/70 bg-white/72 text-olive-deep shadow-[0_10px_24px_rgba(74,18,37,0.08)] hover:bg-white"
+              className="h-12 w-12 border-white/18 bg-white/12 text-white shadow-[0_10px_24px_rgba(20,7,13,0.18)] hover:bg-white/18"
             >
               <ChevronLeft className="h-5 w-5" />
             </Button>
@@ -49,7 +52,7 @@ export function ReviewsSection() {
               variant="outline"
               size="icon"
               onClick={showNext}
-              className="h-12 w-12 border-white/70 bg-white/72 text-olive-deep shadow-[0_10px_24px_rgba(74,18,37,0.08)] hover:bg-white"
+              className="h-12 w-12 border-white/18 bg-white/12 text-white shadow-[0_10px_24px_rgba(20,7,13,0.18)] hover:bg-white/18"
             >
               <ChevronRight className="h-5 w-5" />
             </Button>
@@ -60,25 +63,23 @@ export function ReviewsSection() {
               {visibleReviews.map((review, index) => (
                 <Card
                   key={`${review.name}-${activeIndex}-${index}`}
-                  className="overflow-hidden rounded-[2.1rem] border-white/70 bg-[linear-gradient(180deg,rgba(255,255,255,0.86),rgba(247,238,227,0.7))] shadow-[0_24px_65px_rgba(74,18,37,0.1)]"
+                  className="overflow-hidden rounded-[2.1rem] border-white/40 bg-[linear-gradient(180deg,rgba(255,252,250,0.96),rgba(249,238,241,0.9))] text-ink shadow-[0_24px_65px_rgba(20,7,13,0.18)]"
                 >
                   <CardContent className="flex h-full flex-col p-8">
                     <div className="flex items-center justify-between gap-4">
-                      <div className="flex h-12 w-12 items-center justify-center rounded-full border border-white/70 bg-[linear-gradient(180deg,rgba(255,255,255,0.92),rgba(247,236,222,0.72))] text-gold shadow-[0_10px_24px_rgba(176,138,82,0.14)]">
+                      <div className="flex h-12 w-12 items-center justify-center rounded-full border border-[#b79a73]/24 bg-[linear-gradient(180deg,rgba(255,255,255,0.14),rgba(183,154,115,0.08))] text-gold shadow-[0_10px_24px_rgba(20,7,13,0.18)]">
                         <Quote className="h-5 w-5" strokeWidth={1.9} />
                       </div>
-                      <p className="text-sm text-olive-deep/56">
+                      <p className="text-sm text-ink/50">
                         {((activeIndex + index) % reviews.length) + 1} / {reviews.length}
                       </p>
                     </div>
 
-                    <p className="mt-6 text-lg leading-8 text-olive-deep/78">
-                      „{review.quote}”
-                    </p>
+                    <p className="mt-6 text-lg leading-8 text-ink/88">„{review.quote}”</p>
 
-                    <div className="mt-auto border-t border-olive/10 pt-6">
+                    <div className="mt-auto border-t border-ink/8 pt-6">
                       <p className="text-lg font-semibold text-ink">{review.name}</p>
-                      <p className="mt-1 text-xs font-semibold uppercase tracking-[0.28em] text-wine">
+                      <p className="mt-1 text-xs font-semibold uppercase tracking-[0.28em] text-gold">
                         {review.event}
                       </p>
                     </div>
@@ -98,7 +99,7 @@ export function ReviewsSection() {
                 className={
                   index === activeIndex
                     ? "h-2.5 w-8 rounded-full bg-gold transition"
-                    : "h-2.5 w-2.5 rounded-full bg-mocha/22 transition hover:bg-mocha/36"
+                    : "h-2.5 w-2.5 rounded-full bg-white/20 transition hover:bg-white/34"
                 }
               />
             ))}

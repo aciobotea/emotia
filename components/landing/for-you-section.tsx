@@ -30,8 +30,8 @@ export function ForYouSection() {
   return (
     <section className="px-6 py-16 lg:px-10 lg:py-22">
       <div className="mx-auto max-w-[88rem]">
-        <div className="relative overflow-hidden rounded-[2.7rem] border border-white/60 bg-[linear-gradient(145deg,rgba(255,252,246,0.96),rgba(240,228,210,0.86),rgba(224,205,180,0.74))] p-7 shadow-[0_28px_85px_rgba(74,18,37,0.11)] sm:p-8 lg:p-10">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.7),transparent_30%),radial-gradient(circle_at_bottom_right,rgba(176,138,82,0.14),transparent_28%)]" />
+        <div className="relative overflow-hidden rounded-[2.7rem] border border-white/60 bg-[linear-gradient(145deg,rgba(255,253,248,0.96),rgba(239,233,225,0.9),rgba(214,202,186,0.78))] p-7 shadow-[0_28px_85px_rgba(91,35,56,0.12)] sm:p-8 lg:p-10">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.7),transparent_30%),radial-gradient(circle_at_bottom_right,rgba(183,154,115,0.12),transparent_28%)]" />
 
           <div className="relative grid gap-10 lg:grid-cols-[0.82fr_1.18fr] lg:items-start">
             <div className="max-w-xl">
@@ -56,11 +56,11 @@ export function ForYouSection() {
                 return (
                   <Card
                     key={reason.title}
-                    className="overflow-hidden rounded-[2rem] border-white/65 bg-[linear-gradient(180deg,rgba(255,255,255,0.76),rgba(250,243,235,0.58))] shadow-[0_22px_52px_rgba(74,18,37,0.09)]"
+                    className="overflow-hidden rounded-[2rem] border-white/65 bg-[linear-gradient(180deg,rgba(255,255,255,0.82),rgba(242,236,228,0.7))] shadow-[0_22px_52px_rgba(91,35,56,0.1)]"
                   >
                     <CardContent className="flex flex-col gap-6 p-7 lg:flex-row lg:items-start lg:justify-between lg:p-8">
                       <div className="flex gap-5">
-                        <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-[1.15rem] border border-white/65 bg-[linear-gradient(180deg,rgba(255,255,255,0.92),rgba(247,236,222,0.68))] text-gold shadow-[0_10px_24px_rgba(176,138,82,0.16)]">
+                        <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-[1.15rem] border border-white/65 bg-[linear-gradient(180deg,rgba(255,255,255,0.94),rgba(235,228,217,0.76))] text-gold shadow-[0_10px_24px_rgba(139,31,65,0.16)]">
                           <Icon className="h-6 w-6" strokeWidth={1.85} />
                         </div>
                         <div>

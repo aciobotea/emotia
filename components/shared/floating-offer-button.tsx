@@ -7,9 +7,11 @@ export function FloatingOfferButton() {
       <Button
         asChild
         size="lg"
-        className="h-13 rounded-full bg-wine px-6 text-ivory shadow-[0_18px_40px_rgba(74,18,37,0.22)] hover:bg-[#a03350]"
+        className="h-13 rounded-full bg-wine px-6 text-white hover:bg-[#a82f53]"
       >
-        <Link href="/#pricing-inquiry">Cere ofertă</Link>
+        <Link href="/#pricing-inquiry" className="text-white">
+          Cere ofertă
+        </Link>
       </Button>
     </div>
   );

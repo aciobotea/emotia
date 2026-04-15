@@ -18,21 +18,21 @@ export function EventsShowcaseSection() {
           {events.map((event, index) => (
             <Card
               key={event.slug}
-              className="group h-full overflow-hidden rounded-[2.15rem] border-olive/10 bg-[linear-gradient(180deg,rgba(255,251,244,0.97),rgba(236,226,209,0.76))] shadow-[0_18px_55px_rgba(74,18,37,0.09)] transition duration-300 hover:-translate-y-1.5 hover:shadow-[0_26px_70px_rgba(74,18,37,0.14)]"
+              className="group h-full overflow-hidden rounded-[2.15rem] border-wine/12 bg-[linear-gradient(180deg,rgba(255,250,252,0.98),rgba(247,224,232,0.86))] shadow-[0_18px_55px_rgba(91,35,56,0.12)] transition duration-300 hover:-translate-y-1.5 hover:shadow-[0_26px_70px_rgba(91,35,56,0.18)]"
             >
               <CardContent className="flex h-full flex-col p-0">
                 <div
                   className={`relative h-84 border-b border-olive/10 ${
                     index === 0
-                      ? "bg-[linear-gradient(135deg,#d5c1aa,#fff7ee,#b08a52)]"
+                      ? "bg-[linear-gradient(135deg,#f0b8c9,#fff8fb,#c43868)]"
                       : index === 1
-                        ? "bg-[linear-gradient(135deg,#cbb49c,#fff9f1,#9a7b4f)]"
+                        ? "bg-[linear-gradient(135deg,#ebb0c4,#fff7fb,#b12c5c)]"
                         : index === 2
-                          ? "bg-[linear-gradient(135deg,#dbc8b5,#f3e7d6,#8b2740)]"
-                          : "bg-[linear-gradient(135deg,#d7c3af,#fff8ef,#b99663)]"
+                          ? "bg-[linear-gradient(135deg,#efc2d1,#fbeef3,#8f173d)]"
+                          : "bg-[linear-gradient(135deg,#f1c1d0,#fff8fb,#cf4d78)]"
                   }`}
                 >
-                  <div className="absolute inset-6 rounded-[1.55rem] border border-white/45 bg-[linear-gradient(180deg,rgba(255,255,255,0.34),rgba(255,250,244,0.1))] shadow-[inset_0_1px_0_rgba(255,255,255,0.35)]" />
+                  <div className="absolute inset-6 rounded-[1.55rem] border border-white/45 bg-[linear-gradient(180deg,rgba(255,255,255,0.34),rgba(255,248,249,0.12))] shadow-[inset_0_1px_0_rgba(255,255,255,0.35)]" />
                   <div className="relative h-full p-7" />
                 </div>
                 <div className="flex flex-1 flex-col p-8">
@@ -48,7 +48,7 @@ export function EventsShowcaseSection() {
                   <Button
                     asChild
                     variant="outline"
-                    className="mt-auto w-fit rounded-full border-olive/16 bg-[rgba(255,255,255,0.68)] px-5 py-2.5 text-sm text-olive-deep shadow-[0_10px_24px_rgba(74,18,37,0.05)] hover:border-olive/28 hover:bg-[rgba(255,255,255,0.9)] hover:text-mocha"
+                    className="mt-auto w-fit rounded-full border-olive/16 bg-[rgba(255,255,255,0.68)] px-5 py-2.5 text-sm text-olive-deep shadow-[0_10px_24px_rgba(91,35,56,0.08)] hover:border-olive/28 hover:bg-[rgba(255,255,255,0.9)] hover:text-mocha"
                   >
                     <Link href={`/events/${event.slug}`}>Află mai multe</Link>
                   </Button>

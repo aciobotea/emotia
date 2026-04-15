@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Manrope, Prata } from "next/font/google";
+import { SiteHeader } from "@/components/shared/site-header";
 import "./globals.css";
 
 const displayFont = Prata({
@@ -27,7 +28,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${displayFont.variable} ${bodyFont.variable}`}>
-      <body>{children}</body>
+      <body>
+        <SiteHeader />
+        {children}
+      </body>
     </html>
   );
 }
