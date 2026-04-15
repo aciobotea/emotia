@@ -75,7 +75,7 @@ export function PricingInquiryForm() {
           onChange={(event) => updateField("name", event.target.value)}
           placeholder="Numele tau"
           required
-          className="h-12 rounded-2xl border border-white/12 bg-white/8 px-4 text-sm text-paper placeholder:text-paper/36 outline-none transition focus:border-white/24 focus:bg-white/10"
+          className="h-12 rounded-2xl bg-white/10 px-4 text-sm text-paper placeholder:text-paper/36 outline-none transition focus:bg-white/16"
         />
       </label>
 
@@ -90,7 +90,7 @@ export function PricingInquiryForm() {
           onChange={(event) => updateField("email", event.target.value)}
           placeholder="email@exemplu.ro"
           required
-          className="h-12 rounded-2xl border border-white/12 bg-white/8 px-4 text-sm text-paper placeholder:text-paper/36 outline-none transition focus:border-white/24 focus:bg-white/10"
+          className="h-12 rounded-2xl bg-white/10 px-4 text-sm text-paper placeholder:text-paper/36 outline-none transition focus:bg-white/16"
         />
       </label>
 
@@ -105,7 +105,7 @@ export function PricingInquiryForm() {
           onChange={(event) => updateField("phone", event.target.value)}
           placeholder="07xx xxx xxx"
           required
-          className="h-12 rounded-2xl border border-white/12 bg-white/8 px-4 text-sm text-paper placeholder:text-paper/36 outline-none transition focus:border-white/24 focus:bg-white/10"
+          className="h-12 rounded-2xl bg-white/10 px-4 text-sm text-paper placeholder:text-paper/36 outline-none transition focus:bg-white/16"
         />
       </label>
 
@@ -118,7 +118,7 @@ export function PricingInquiryForm() {
           value={values.eventType}
           onChange={(event) => updateField("eventType", event.target.value)}
           required
-          className="h-12 rounded-2xl border border-white/12 bg-white/8 px-4 text-sm text-paper outline-none transition focus:border-white/24 focus:bg-white/10"
+          className="h-12 rounded-2xl bg-white/10 px-4 text-sm text-paper outline-none transition focus:bg-white/16"
         >
           <option value="" disabled className="text-ink">
             Alege evenimentul
@@ -142,7 +142,7 @@ export function PricingInquiryForm() {
           onChange={(event) => updateField("quantity", event.target.value)}
           placeholder="Ex: 25"
           required
-          className="h-12 rounded-2xl border border-white/12 bg-white/8 px-4 text-sm text-paper placeholder:text-paper/36 outline-none transition focus:border-white/24 focus:bg-white/10"
+          className="h-12 rounded-2xl bg-white/10 px-4 text-sm text-paper placeholder:text-paper/36 outline-none transition focus:bg-white/16"
         />
       </label>
 
@@ -157,7 +157,7 @@ export function PricingInquiryForm() {
           onChange={(event) => updateField("eventDate", event.target.value)}
           placeholder="Ex: 14 august 2026"
           required
-          className="h-12 rounded-2xl border border-white/12 bg-white/8 px-4 text-sm text-paper placeholder:text-paper/36 outline-none transition focus:border-white/24 focus:bg-white/10"
+          className="h-12 rounded-2xl bg-white/10 px-4 text-sm text-paper placeholder:text-paper/36 outline-none transition focus:bg-white/16"
         />
       </label>
 
@@ -172,7 +172,7 @@ export function PricingInquiryForm() {
           onChange={(event) => updateField("details", event.target.value)}
           placeholder="Spune-ne pe scurt ce iti doresti, pentru cine este revista si orice alte detalii importante."
           required
-          className="min-h-32 rounded-[1.6rem] border border-white/12 bg-white/8 px-4 py-3 text-sm text-paper placeholder:text-paper/36 outline-none transition focus:border-white/24 focus:bg-white/10"
+          className="min-h-32 rounded-[1.6rem] bg-white/10 px-4 py-3 text-sm text-paper placeholder:text-paper/36 outline-none transition focus:bg-white/16"
         />
       </label>
 

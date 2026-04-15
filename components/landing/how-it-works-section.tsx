@@ -72,18 +72,18 @@ export function HowItWorksSection() {
                   <div
                     className={
                       isLast
-                        ? "relative h-full overflow-hidden rounded-[2.2rem] border border-white/12 bg-[linear-gradient(180deg,rgba(123,31,59,0.98),rgba(92,18,41,0.96))] p-6 shadow-[0_24px_65px_rgba(91,35,56,0.24)]"
-                        : "relative h-full overflow-hidden rounded-[2rem] border border-white/12 bg-[linear-gradient(180deg,rgba(123,31,59,0.98),rgba(92,18,41,0.96))] p-6 shadow-[0_18px_46px_rgba(91,35,56,0.2)]"
+                        ? "relative h-full overflow-hidden rounded-[2.2rem] bg-[linear-gradient(180deg,rgba(123,31,59,0.98),rgba(92,18,41,0.96))] p-6 shadow-[0_20px_48px_rgba(91,35,56,0.18)]"
+                        : "relative h-full overflow-hidden rounded-[2rem] bg-[linear-gradient(180deg,rgba(123,31,59,0.98),rgba(92,18,41,0.96))] p-6 shadow-[0_14px_34px_rgba(91,35,56,0.16)]"
                     }
                   >
                     <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.1),transparent_28%)]" />
 
                     <div className="relative">
                       <div className="flex items-center justify-between gap-4">
-                <div className="flex h-12 w-12 items-center justify-center rounded-[1rem] border border-white/14 bg-[linear-gradient(180deg,rgba(255,255,255,0.14),rgba(255,255,255,0.08))] text-white shadow-[0_10px_25px_rgba(56,10,26,0.22)]">
+                <div className="flex h-12 w-12 items-center justify-center rounded-[1rem] bg-white/12 text-white shadow-[0_8px_18px_rgba(56,10,26,0.16)]">
                           <Icon className="h-5 w-5" strokeWidth={1.85} />
                         </div>
-                        <span className="rounded-full border border-white/14 bg-white/8 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.3em] text-paper/78">
+                        <span className="rounded-full bg-white/8 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.3em] text-paper/78">
                           {step.number}
                         </span>
                       </div>

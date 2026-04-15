@@ -11,8 +11,8 @@ const links = [
 
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 z-30 border-b border-wine/10 bg-[rgba(255,253,248,0.92)] backdrop-blur-xl">
-      <div className="border-b border-white/12 bg-[linear-gradient(90deg,#67102c,#8f173d,#c43868)] px-6 py-3.5 text-center text-base font-medium text-white lg:px-10">
+    <header className="sticky top-0 z-30 bg-[rgba(255,253,248,0.92)] shadow-[0_10px_30px_rgba(91,35,56,0.05)] backdrop-blur-xl">
+      <div className="bg-[linear-gradient(90deg,#67102c,#8f173d,#c43868)] px-6 py-3.5 text-center text-base font-medium text-white lg:px-10">
         <span className="font-semibold uppercase tracking-[0.24em] text-white/82">
           Promoția lunii aprilie:
         </span>{" "}
@@ -21,7 +21,7 @@ export function SiteHeader() {
 
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
         <Link href="/" className="flex items-center gap-4">
-          <span className="flex h-12 w-12 items-center justify-center rounded-full border border-[#b79a73]/35 bg-[linear-gradient(180deg,rgba(255,255,255,0.98),rgba(250,239,215,0.92))] text-[10px] font-semibold uppercase tracking-[0.35em] text-olive-deep shadow-[0_8px_24px_rgba(126,92,35,0.14)]">
+          <span className="flex h-12 w-12 items-center justify-center rounded-full bg-[linear-gradient(180deg,rgba(255,255,255,0.98),rgba(250,239,215,0.92))] text-[10px] font-semibold uppercase tracking-[0.35em] text-olive-deep shadow-[0_8px_20px_rgba(126,92,35,0.1)]">
             EM
           </span>
           <span>

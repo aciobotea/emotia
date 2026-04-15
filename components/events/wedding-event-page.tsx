@@ -51,8 +51,8 @@ export function WeddingEventPage() {
                   Revista nunții tale, într-un format care rămâne.
                 </h1>
                 <p className="mt-7 max-w-2xl text-lg leading-8 text-olive-deep/72">
-                  Un mod elegant de a spune povestea voastră —? pentru invitați și
-                  pentru voi, peste ani.
+                  Un mod elegant de a spune povestea voastră - o mărturie pentru
+                  invitați și pentru voi, peste ani.
                 </p>
 
                 <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -66,8 +66,8 @@ export function WeddingEventPage() {
                 </div>
 
                 <div className="mt-14 max-w-2xl rounded-[2rem] border border-white/60 bg-white/42 p-6 shadow-[0_16px_38px_rgba(91,35,56,0.08)] backdrop-blur-sm">
-                  <p className="font-display text-[2.1rem] italic leading-tight text-gold">
-                    Un obiect făcut pentru ziua voastră, dar păstrat mult după ea.
+                  <p className="font-display text-[1.75rem] italic leading-tight text-wine sm:text-[1.95rem]">
+                    O mărturie elegantă, creată pentru ziua voastră și păstrată pentru totdeauna.
                   </p>
                 </div>
               </div>

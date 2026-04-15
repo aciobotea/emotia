@@ -9,13 +9,13 @@ export function HeroSection() {
       <div className="absolute inset-x-0 top-6 -z-10 mx-auto h-80 max-w-6xl rounded-full bg-sand/85 blur-3xl" />
 
       <div className="mx-auto max-w-7xl">
-        <Card className="overflow-hidden rounded-[2.75rem] border-wine/20 bg-[linear-gradient(145deg,rgba(255,253,247,0.96),rgba(235,227,215,0.84),rgba(203,186,160,0.68))] shadow-[0_28px_90px_rgba(115,20,53,0.14)]">
+        <Card className="overflow-hidden rounded-[2.75rem] bg-[linear-gradient(145deg,rgba(255,253,247,0.96),rgba(235,227,215,0.82),rgba(203,186,160,0.58))] shadow-[0_24px_70px_rgba(115,20,53,0.1)]">
           <CardContent className="grid gap-0 p-0 lg:grid-cols-[1.08fr_0.92fr]">
             <div className="flex flex-col justify-between p-8 sm:p-10 lg:p-14">
               <div>
                 <Badge
                   variant="outline"
-                  className="border-olive/14 bg-[rgba(255,252,244,0.92)] px-4 py-1.5 uppercase tracking-[0.35em] text-mocha"
+                  className="border-0 bg-[rgba(255,252,244,0.78)] px-4 py-1.5 uppercase tracking-[0.35em] text-mocha"
                 >
                   Reviste personalizate premium
                 </Badge>
@@ -39,43 +39,24 @@ export function HeroSection() {
                   asChild
                   size="lg"
                   variant="outline"
-                  className="border-[#b0936c] bg-[linear-gradient(180deg,#fffdf4,#e6dbc8)] px-7 text-olive-deep shadow-[0_10px_24px_rgba(126,88,24,0.16)] hover:border-[#9f7f56] hover:bg-[linear-gradient(180deg,#fffdf8,#d8c4a6)]"
+                  className="border-0 bg-[linear-gradient(180deg,#fffdf4,#e6dbc8)] px-7 text-olive-deep shadow-[0_8px_20px_rgba(126,88,24,0.12)] hover:bg-[linear-gradient(180deg,#fffdf8,#d8c4a6)]"
                 >
                   <Link href="/#pricing">Cere ofertă</Link>
                 </Button>
               </div>
             </div>
 
-            <div className="relative min-h-[420px] overflow-hidden border-t border-olive/10 lg:min-h-[640px] lg:border-l lg:border-t-0">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.24),transparent_22%),linear-gradient(145deg,rgba(92,12,39,0.98),rgba(143,23,61,0.92),rgba(205,65,111,0.78))]" />
+            <div className="relative min-h-[420px] overflow-hidden lg:min-h-[640px]">
               <video
-                className="absolute inset-0 h-full w-full object-cover opacity-18 mix-blend-soft-light"
+                className="absolute inset-0 h-full w-full object-cover"
                 autoPlay
                 muted
                 loop
                 playsInline
               >
-                <source src="/hero-cover.mp4" type="video/mp4" />
+                <source src="/homepage2/cover-2.mp4" type="video/mp4" />
               </video>
-              <div className="relative flex h-full flex-col justify-between p-8 sm:p-10">
-                <div className="flex items-center justify-between">
-                  <span className="rounded-full border border-white/16 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.32em] text-ivory">
-                    Cover video
-                  </span>
-                  <span className="rounded-full border border-white/14 bg-[rgba(139,31,65,0.34)] px-4 py-2 text-xs font-medium text-ivory/84">
-                    Înlocuiește `public/hero-cover.mp4`
-                  </span>
-                </div>
-
-                <div className="max-w-md">
-                  <p className="text-xs font-semibold uppercase tracking-[0.34em] text-ivory/68">
-                    Premium presentation
-                  </p>
-                  <p className="mt-4 font-display text-4xl leading-tight text-ivory sm:text-5xl">
-                    Un cover cinematic, făcut să vândă emoție din primul ecran.
-                  </p>
-                </div>
-              </div>
+              <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(50,24,34,0.04),rgba(50,24,34,0.12))]" />
             </div>
           </CardContent>
         </Card>
