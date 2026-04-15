@@ -335,11 +335,11 @@ export function AnniversaryEventPage() {
             </p>
           </div>
 
-          <div className="mt-10 grid gap-4 md:grid-cols-2">
+          <div className="-mx-8 mt-10 flex gap-4 overflow-x-auto px-8 pb-3 [scrollbar-width:none] md:mx-0 md:grid md:grid-cols-2 md:overflow-visible md:px-0 md:pb-0 [&::-webkit-scrollbar]:hidden">
             {anniversaryPricing.map((tier) => (
               <Card
                 key={tier.quantity}
-                className="rounded-[1.75rem] border border-white/10 bg-white/6 p-5"
+                className="w-[13rem] shrink-0 rounded-[1.75rem] border border-white/10 bg-white/6 p-5 md:w-auto"
               >
                 <CardContent className="p-5">
                   <p className="text-xs font-semibold uppercase tracking-[0.28em] text-paper/65">

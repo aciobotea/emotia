@@ -8,6 +8,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export function ReviewsSection() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const activeReview = reviews[activeIndex];
   const visibleReviews = Array.from({ length: 3 }, (_, offset) => {
     return reviews[(activeIndex + offset) % reviews.length];
   });
@@ -58,14 +59,36 @@ export function ReviewsSection() {
             </Button>
           </div>
 
-          <div className="overflow-hidden">
+          <div className="md:hidden">
+            <Card className="overflow-hidden rounded-[2.1rem] bg-[linear-gradient(180deg,rgba(255,252,250,0.96),rgba(249,238,241,0.86))] text-ink shadow-[0_18px_42px_rgba(20,7,13,0.12)]">
+              <CardContent className="flex h-full flex-col p-8">
+                <div className="flex items-center justify-between gap-4">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[linear-gradient(180deg,rgba(255,255,255,0.18),rgba(183,154,115,0.1))] text-gold shadow-[0_8px_18px_rgba(20,7,13,0.1)]">
+                    <Quote className="h-5 w-5" strokeWidth={1.9} />
+                  </div>
+                  <p className="text-sm text-ink/50">
+                    {activeIndex + 1} / {reviews.length}
+                  </p>
+                </div>
+
+                <p className="mt-6 text-lg leading-8 text-ink/88">„{activeReview.quote}”</p>
+
+                <div className="mt-auto pt-6">
+                  <p className="text-lg font-semibold text-ink">{activeReview.name}</p>
+                  <p className="mt-1 text-xs font-semibold uppercase tracking-[0.28em] text-gold">
+                    {activeReview.event}
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="hidden overflow-hidden md:block">
             <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
               {visibleReviews.map((review, index) => (
                 <Card
                   key={`${review.name}-${activeIndex}-${index}`}
-                  className={`overflow-hidden rounded-[2.1rem] bg-[linear-gradient(180deg,rgba(255,252,250,0.96),rgba(249,238,241,0.86))] text-ink shadow-[0_18px_42px_rgba(20,7,13,0.12)] ${
-                    index === 0 ? "block" : index === 1 ? "hidden md:block" : "hidden xl:block"
-                  }`}
+                  className={`overflow-hidden rounded-[2.1rem] bg-[linear-gradient(180deg,rgba(255,252,250,0.96),rgba(249,238,241,0.86))] text-ink shadow-[0_18px_42px_rgba(20,7,13,0.12)] ${index === 2 ? "hidden xl:block" : ""}`}
                 >
                   <CardContent className="flex h-full flex-col p-8">
                     <div className="flex items-center justify-between gap-4">
