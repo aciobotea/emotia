@@ -205,9 +205,9 @@ export function BirthdayEventPage() {
               amintiri și momente importante din viața sărbătoritei.
             </p>
 
-            <Card className="mt-6 rounded-[2.4rem] border-white/70 bg-[linear-gradient(180deg,rgba(255,255,255,0.88),rgba(248,239,214,0.78))] shadow-[0_20px_60px_rgba(91,35,56,0.1)]">
-              <CardContent className="p-8 lg:p-10">
-                <h2 className="font-display text-[2.8rem] font-semibold leading-tight text-olive-deep">
+            <Card className="mt-8 rounded-[2rem] bg-white/54 shadow-none">
+              <CardContent className="p-6 lg:p-8">
+                <h2 className="font-display text-[2.25rem] font-semibold leading-tight text-olive-deep sm:text-[2.55rem]">
                   Ce conține?
                 </h2>
 
@@ -219,7 +219,7 @@ export function BirthdayEventPage() {
                   {contentItems.map((item) => (
                     <div
                       key={item}
-                      className="border-b border-white/55 py-4 text-base text-olive-deep/76 last:border-b-0"
+                      className="py-2.5 text-[15px] leading-7 text-olive-deep/76"
                     >
                       {item}
                     </div>
@@ -235,12 +235,12 @@ export function BirthdayEventPage() {
           </div>
 
           <div className="space-y-6">
-            <Card className="rounded-[2.4rem] border-white/70 bg-[linear-gradient(180deg,rgba(255,255,255,0.88),rgba(248,239,214,0.78))] shadow-[0_20px_60px_rgba(91,35,56,0.1)]">
-              <CardContent className="p-8 lg:p-10">
-                <div className="flex h-14 w-14 items-center justify-center rounded-[1.2rem] border border-white/70 bg-[linear-gradient(180deg,rgba(255,255,255,0.95),rgba(232,223,211,0.82))] text-gold shadow-[0_10px_24px_rgba(139,31,65,0.16)]">
+            <Card className="rounded-[2rem] bg-white/44 shadow-none">
+              <CardContent className="p-6 lg:p-8">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/62 text-gold shadow-none">
                   <Heart className="h-6 w-6" strokeWidth={1.85} />
                 </div>
-                <h2 className="mt-8 font-display text-4xl leading-tight text-olive-deep">
+                <h2 className="mt-5 font-display text-3xl leading-tight text-olive-deep">
                   Personalizare
                 </h2>
                 <p className="mt-4 text-base leading-8 text-olive-deep/74">
@@ -252,12 +252,12 @@ export function BirthdayEventPage() {
               </CardContent>
             </Card>
 
-            <Card className="rounded-[2.4rem] border-white/70 bg-[linear-gradient(180deg,rgba(255,255,255,0.88),rgba(248,239,214,0.78))] shadow-[0_20px_60px_rgba(91,35,56,0.1)]">
-              <CardContent className="p-8 lg:p-10">
-                <div className="flex h-14 w-14 items-center justify-center rounded-[1.2rem] border border-white/70 bg-[linear-gradient(180deg,rgba(255,255,255,0.95),rgba(232,223,211,0.82))] text-gold shadow-[0_10px_24px_rgba(139,31,65,0.16)]">
+            <Card className="rounded-[2rem] bg-white/44 shadow-none">
+              <CardContent className="p-6 lg:p-8">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/62 text-gold shadow-none">
                   <Gift className="h-6 w-6" strokeWidth={1.85} />
                 </div>
-                <h2 className="mt-8 font-display text-4xl leading-tight text-olive-deep">
+                <h2 className="mt-5 font-display text-3xl leading-tight text-olive-deep">
                   Cadou cu sens
                 </h2>
                 <p className="mt-4 text-base leading-8 text-olive-deep/74">
@@ -269,19 +269,19 @@ export function BirthdayEventPage() {
               </CardContent>
             </Card>
 
-            <Card className="rounded-[2.4rem] border-white/70 bg-[linear-gradient(180deg,rgba(255,255,255,0.88),rgba(248,239,214,0.78))] shadow-[0_20px_60px_rgba(91,35,56,0.1)]">
-              <CardContent className="p-8 lg:p-10">
-                <div className="flex h-14 w-14 items-center justify-center rounded-[1.2rem] border border-white/70 bg-[linear-gradient(180deg,rgba(255,255,255,0.95),rgba(232,223,211,0.82))] text-gold shadow-[0_10px_24px_rgba(139,31,65,0.16)]">
+            <Card className="rounded-[2rem] bg-white/44 shadow-none">
+              <CardContent className="p-6 lg:p-8">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/62 text-gold shadow-none">
                   <PenSquare className="h-6 w-6" strokeWidth={1.85} />
                 </div>
-                <h2 className="mt-8 font-display text-4xl leading-tight text-olive-deep">
+                <h2 className="mt-5 font-display text-3xl leading-tight text-olive-deep">
                   Specificații
                 </h2>
                 <div className="mt-8 grid gap-3">
                   {specifications.map((item) => (
                     <div
                       key={item}
-                      className="border-b border-white/55 py-4 text-base text-olive-deep/76 last:border-b-0"
+                      className="py-2.5 text-[15px] leading-7 text-olive-deep/76"
                     >
                       {item}
                     </div>
@@ -349,7 +349,7 @@ export function BirthdayEventPage() {
         <div className="mx-auto max-w-[88rem] rounded-[3rem] border border-white/60 bg-[linear-gradient(145deg,rgba(255,252,246,0.96),rgba(233,225,213,0.86),rgba(205,187,160,0.72))] p-8 shadow-[0_28px_90px_rgba(91,35,56,0.12)] lg:p-12">
           <div className="grid gap-10 lg:grid-cols-[0.88fr_1.12fr] lg:items-center">
             <div>
-              <div className="flex h-14 w-14 items-center justify-center rounded-[1.2rem] border border-white/70 bg-[linear-gradient(180deg,rgba(255,255,255,0.95),rgba(232,223,211,0.82))] text-gold shadow-[0_10px_24px_rgba(139,31,65,0.16)]">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/62 text-gold shadow-none">
                 <Package className="h-6 w-6" strokeWidth={1.85} />
               </div>
               <p className="mt-8 text-xs font-semibold uppercase tracking-[0.35em] text-wine">
