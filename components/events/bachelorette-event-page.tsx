@@ -1,5 +1,5 @@
-import Link from "next/link";
-import { Heart, MapPinned, Package, PenSquare } from "lucide-react";
+﻿import Link from "next/link";
+import { Heart, Package, PenSquare } from "lucide-react";
 import { PricingInquiryForm } from "@/components/landing/pricing-inquiry-form";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -39,6 +39,14 @@ const gamesItems = [
 const memoriesItems = [
   "Mesaje pentru mireasă",
   "Pagini unde fiecare poate scrie amintiri din weekend",
+];
+
+const contentItems = [
+  ...storyItems,
+  ...weekendGuideItems,
+  ...squadItems,
+  ...gamesItems,
+  ...memoriesItems,
 ];
 
 const specifications = [
@@ -192,97 +200,26 @@ export function BacheloretteEventPage() {
                   Ce conține?
                 </h2>
 
-                <div className="mt-8 space-y-8">
-                  <div>
-                    <h3 className="font-display text-3xl text-olive-deep">Povestea miresei</h3>
-                    <div className="mt-4 grid gap-3">
-                      {storyItems.map((item) => (
-                        <div
-                          key={item}
-                          className="py-2.5 text-[15px] leading-7 text-olive-deep/76"
-                        >
-                          {item}
-                        </div>
-                      ))}
-                    </div>
-                    <p className="mt-4 text-base leading-8 text-olive-deep/70">
-                      Aceste pagini introduc povestea și creează contextul weekendului.
-                    </p>
-                  </div>
+                <p className="mt-4 text-base leading-8 text-olive-deep/74">
+                  În paginile ei se regăsesc:
+                </p>
 
-                  <div>
-                    <h3 className="font-display text-3xl text-olive-deep">Ghidul weekendului</h3>
-                    <p className="mt-3 text-base leading-8 text-olive-deep/72">
-                      Revista funcționează și ca un mic ghid al weekendului bachelorette.
-                    </p>
-                    <div className="mt-4 grid gap-3">
-                      {weekendGuideItems.map((item) => (
-                        <div
-                          key={item}
-                          className="py-2.5 text-[15px] leading-7 text-olive-deep/76"
-                        >
-                          {item}
-                        </div>
-                      ))}
+                <div className="mt-8 grid gap-3">
+                  {contentItems.map((item) => (
+                    <div
+                      key={item}
+                      className="py-2.5 text-[15px] leading-7 text-olive-deep/76"
+                    >
+                      {item}
                     </div>
-                    <p className="mt-4 text-base leading-8 text-olive-deep/70">
-                      Astfel, toate fetele știu exact ce urmează în fiecare moment al weekendului.
-                    </p>
-                  </div>
-
-                  <div>
-                    <h3 className="font-display text-3xl text-olive-deep">Bride squad</h3>
-                    <div className="mt-4 grid gap-3">
-                      {squadItems.map((item) => (
-                        <div
-                          key={item}
-                          className="py-2.5 text-[15px] leading-7 text-olive-deep/76"
-                        >
-                          {item}
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div>
-                    <h3 className="font-display text-3xl text-olive-deep">
-                      Jocuri & activități pentru weekend
-                    </h3>
-                    <p className="mt-3 text-base leading-8 text-olive-deep/72">
-                      Revista include și pagini interactive care transformă weekendul într-o experiență memorabilă.
-                    </p>
-                    <div className="mt-4 grid gap-3">
-                      {gamesItems.map((item) => (
-                        <div
-                          key={item}
-                          className="py-2.5 text-[15px] leading-7 text-olive-deep/76"
-                        >
-                          {item}
-                        </div>
-                      ))}
-                    </div>
-                    <p className="mt-4 text-base leading-8 text-olive-deep/70">
-                      Aceste pagini sunt perfecte pentru momentele de distracție din weekend.
-                    </p>
-                  </div>
-
-                  <div>
-                    <h3 className="font-display text-3xl text-olive-deep">Mesaje & amintiri</h3>
-                    <div className="mt-4 grid gap-3">
-                      {memoriesItems.map((item) => (
-                        <div
-                          key={item}
-                          className="py-2.5 text-[15px] leading-7 text-olive-deep/76"
-                        >
-                          {item}
-                        </div>
-                      ))}
-                    </div>
-                    <p className="mt-4 text-base leading-8 text-olive-deep/70">
-                      Acestea transformă revista într-un suvenir pe care mireasa îl va păstra mult timp.
-                    </p>
-                  </div>
+                  ))}
                 </div>
+
+                <p className="mt-6 max-w-2xl text-base leading-8 text-olive-deep/70">
+                  Fiecare pagină este personalizată cu povestea miresei, programul
+                  weekendului și amintirile voastre, astfel încât revista devine un
+                  ghid fun și un suvenir premium.
+                </p>
               </CardContent>
             </Card>
           </div>
@@ -302,24 +239,6 @@ export function BacheloretteEventPage() {
                 </p>
                 <p className="mt-4 text-base leading-8 text-olive-deep/74">
                   Rezultatul rămâne personal și coerent, fără să pară improvizat sau generic.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="rounded-[2rem] bg-white/44 shadow-none">
-              <CardContent className="p-6 lg:p-8">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/62 text-gold shadow-none">
-                  <MapPinned className="h-6 w-6" strokeWidth={1.85} />
-                </div>
-                <h2 className="mt-5 font-display text-3xl leading-tight text-olive-deep">
-                  Cum se folosește
-                </h2>
-                <p className="mt-4 text-base leading-8 text-olive-deep/74">
-                  Poate fi oferită la începutul weekendului, ca welcome piece pentru grup,
-                  sau pregătită ca surpriză pentru mireasă.
-                </p>
-                <p className="mt-4 text-base leading-8 text-olive-deep/74">
-                  Funcționează atât ca ghid practic, cât și ca amintire fun și premium.
                 </p>
               </CardContent>
             </Card>

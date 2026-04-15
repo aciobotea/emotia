@@ -1,6 +1,6 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 import Link from "next/link";
-import { Gift, Heart, Package, PenSquare } from "lucide-react";
+import { Heart, Package, PenSquare } from "lucide-react";
 import { PricingInquiryForm } from "@/components/landing/pricing-inquiry-form";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -248,23 +248,6 @@ export function BirthdayEventPage() {
                 </p>
                 <p className="mt-4 text-base leading-8 text-olive-deep/74">
                   Rezultatul nu arată generic, ci ca un cadou făcut exact pentru persoana pe care o sărbătoriți.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="rounded-[2rem] bg-white/44 shadow-none">
-              <CardContent className="p-6 lg:p-8">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/62 text-gold shadow-none">
-                  <Gift className="h-6 w-6" strokeWidth={1.85} />
-                </div>
-                <h2 className="mt-5 font-display text-3xl leading-tight text-olive-deep">
-                  Cadou cu sens
-                </h2>
-                <p className="mt-4 text-base leading-8 text-olive-deep/74">
-                  Poate fi oferită ca surpriză principală de ziua ei sau integrată în decorul evenimentului.
-                </p>
-                <p className="mt-4 text-base leading-8 text-olive-deep/74">
-                  Este genul de cadou care emoționează în momentul în care este primit și rămâne valoros după.
                 </p>
               </CardContent>
             </Card>

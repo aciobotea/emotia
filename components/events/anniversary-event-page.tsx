@@ -1,6 +1,6 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 import Link from "next/link";
-import { Heart, PenSquare, Sparkles } from "lucide-react";
+import { Heart, PenSquare } from "lucide-react";
 import { PricingInquiryForm } from "@/components/landing/pricing-inquiry-form";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -279,23 +279,6 @@ export function AnniversaryEventPage() {
                 </p>
                 <p className="mt-4 text-base leading-8 text-olive-deep/74">
                   Totul este adaptat relației voastre, astfel încât rezultatul să nu semene cu nimic generic.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="rounded-[2rem] bg-white/44 shadow-none">
-              <CardContent className="p-6 lg:p-8">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/62 text-gold shadow-none">
-                  <Sparkles className="h-6 w-6" strokeWidth={1.85} />
-                </div>
-                <h2 className="mt-5 font-display text-3xl leading-tight text-olive-deep">
-                  Cadou romantic
-                </h2>
-                <p className="mt-4 text-base leading-8 text-olive-deep/74">
-                  Poate fi oferită la aniversarea relației, logodnă sau aniversarea căsătoriei.
-                </p>
-                <p className="mt-4 text-base leading-8 text-olive-deep/74">
-                  Este genul de gest care surprinde, emoționează și rămâne valoros în timp.
                 </p>
               </CardContent>
             </Card>
