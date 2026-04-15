@@ -63,7 +63,9 @@ export function ReviewsSection() {
               {visibleReviews.map((review, index) => (
                 <Card
                   key={`${review.name}-${activeIndex}-${index}`}
-                  className="overflow-hidden rounded-[2.1rem] bg-[linear-gradient(180deg,rgba(255,252,250,0.96),rgba(249,238,241,0.86))] text-ink shadow-[0_18px_42px_rgba(20,7,13,0.12)]"
+                  className={`overflow-hidden rounded-[2.1rem] bg-[linear-gradient(180deg,rgba(255,252,250,0.96),rgba(249,238,241,0.86))] text-ink shadow-[0_18px_42px_rgba(20,7,13,0.12)] ${
+                    index === 0 ? "block" : index === 1 ? "hidden md:block" : "hidden xl:block"
+                  }`}
                 >
                   <CardContent className="flex h-full flex-col p-8">
                     <div className="flex items-center justify-between gap-4">
