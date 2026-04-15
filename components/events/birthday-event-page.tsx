@@ -82,22 +82,7 @@ export function BirthdayEventPage() {
                 >
                   <source src="/birthday/birthday-cover.mp4" type="video/mp4" />
                 </video>
-                <div className="absolute inset-0 bg-[linear-gradient(145deg,rgba(108,24,50,0.42),rgba(146,55,85,0.24),rgba(214,175,99,0.12))]" />
-                <div className="absolute inset-8 rounded-[2.3rem] border border-white/18 bg-[linear-gradient(180deg,rgba(255,255,255,0.12),rgba(255,255,255,0.04))] shadow-[inset_0_1px_0_rgba(255,255,255,0.18)]" />
-                <div className="relative flex h-full flex-col justify-between p-8 sm:p-10">
-                  <span className="self-start rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.32em] text-ivory">
-                    Preview editorial
-                  </span>
-
-                  <div className="ml-auto max-w-md rounded-[2rem] border border-white/18 bg-white/10 p-6 backdrop-blur-sm">
-                    <p className="text-xs font-semibold uppercase tracking-[0.3em] text-ivory/70">
-                      Pentru cineva drag
-                    </p>
-                    <p className="mt-4 font-display text-4xl leading-tight text-ivory">
-                      Elegantă, emoțională și suficient de personală cât să nu semene cu nimic generic.
-                    </p>
-                  </div>
-                </div>
+                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(72,18,38,0.04),rgba(72,18,38,0.12))]" />
               </div>
             </div>
           </div>
@@ -117,7 +102,7 @@ export function BirthdayEventPage() {
               </p>
               <p className="mt-6 max-w-xl text-base leading-8 text-olive-deep/72">
                 Este un cadou original care adună fotografii, amintiri și mesaje într-un
-                format elegant, tipărit —? exact ca o revistă reală.
+                format elegant, tipărit, exact ca o revistă reală.
               </p>
             </div>
 
@@ -377,7 +362,7 @@ export function BirthdayEventPage() {
 
             <div className="space-y-6 text-lg leading-9 text-olive-deep/76">
               <p>
-                De la o singură revistă oferită cadou până la exemplare pentru întreaga celebrare —?
+                De la o singură revistă oferită cadou până la exemplare pentru întreaga celebrare,
                 fără limită de volum.
               </p>
               <div className="flex flex-col gap-4 sm:flex-row">
@@ -410,7 +395,7 @@ export function BirthdayEventPage() {
             </h2>
             <p className="mt-4 text-base leading-7 text-paper/72 sm:text-lg">
               Costul depinde de numărul de exemplare și de specificul revistei. Poți
-              comanda orice volum —? de la un exemplar până la reviste pentru întreaga celebrare.
+              comanda orice volum, de la un exemplar până la reviste pentru întreaga celebrare.
             </p>
           </div>
 

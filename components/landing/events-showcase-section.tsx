@@ -29,11 +29,11 @@ export function EventsShowcaseSection() {
           description="Fiecare categorie este creată cu o estetică și o poveste proprie, adaptată evenimentului tău."
         />
 
-        <div className="mt-14 grid gap-7 md:grid-cols-2 xl:grid-cols-4">
+        <div className="-mx-6 mt-14 flex gap-5 overflow-x-auto px-6 pb-4 [scrollbar-width:none] md:mx-0 md:grid md:grid-cols-2 md:gap-7 md:overflow-visible md:px-0 md:pb-0 xl:grid-cols-4 [&::-webkit-scrollbar]:hidden">
           {events.map((event) => (
             <Card
               key={event.slug}
-              className="group h-full overflow-hidden rounded-[2.15rem] bg-[linear-gradient(180deg,rgba(255,250,252,0.98),rgba(247,224,232,0.78))] shadow-[0_16px_42px_rgba(91,35,56,0.09)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_22px_54px_rgba(91,35,56,0.13)]"
+              className="group h-full w-[78vw] max-w-[21rem] shrink-0 overflow-hidden rounded-[2.15rem] bg-[linear-gradient(180deg,rgba(255,250,252,0.98),rgba(247,224,232,0.78))] shadow-[0_16px_42px_rgba(91,35,56,0.09)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_22px_54px_rgba(91,35,56,0.13)] md:w-auto md:max-w-none"
             >
               <CardContent className="flex h-full flex-col p-0">
                 <div className="relative aspect-[4/5] overflow-hidden bg-paper">

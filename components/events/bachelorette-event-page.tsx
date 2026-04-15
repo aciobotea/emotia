@@ -3,7 +3,13 @@ import { Heart, MapPinned, Package, PenSquare } from "lucide-react";
 import { PricingInquiryForm } from "@/components/landing/pricing-inquiry-form";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { pricingPreview } from "@/data/site";
+
+const bachelorettePricingPreview = [
+  { quantity: "1 bucată", price: "129 lei" },
+  { quantity: "5 bucăți", price: "109 lei" },
+  { quantity: "10 bucăți", price: "89 lei" },
+  { quantity: "20 bucăți", price: "69 lei" },
+];
 
 const storyItems = [
   "Povestea miresei",
@@ -99,22 +105,7 @@ export function BacheloretteEventPage() {
                 >
                   <source src="/bachelorette/bachelorette-cover.mp4" type="video/mp4" />
                 </video>
-                <div className="absolute inset-0 bg-[linear-gradient(145deg,rgba(112,24,52,0.44),rgba(151,58,89,0.22),rgba(208,170,152,0.14))]" />
-                <div className="absolute inset-8 rounded-[2.3rem] border border-white/18 bg-[linear-gradient(180deg,rgba(255,255,255,0.12),rgba(255,255,255,0.04))] shadow-[inset_0_1px_0_rgba(255,255,255,0.18)]" />
-                <div className="relative flex h-full flex-col justify-between p-8 sm:p-10">
-                  <span className="self-start rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.32em] text-ivory">
-                    Preview editorial
-                  </span>
-
-                  <div className="ml-auto max-w-md rounded-[2rem] border border-white/18 bg-white/10 p-6 backdrop-blur-sm">
-                    <p className="text-xs font-semibold uppercase tracking-[0.3em] text-ivory/70">
-                      Pentru mireasă și pentru fete
-                    </p>
-                    <p className="mt-4 font-display text-4xl leading-tight text-ivory">
-                      Personală, jucăușă și suficient de bine construită cât să rămână.
-                    </p>
-                  </div>
-                </div>
+                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(72,18,38,0.04),rgba(72,18,38,0.12))]" />
               </div>
             </div>
           </div>
@@ -374,7 +365,7 @@ export function BacheloretteEventPage() {
 
             <div className="space-y-6 text-lg leading-9 text-olive-deep/76">
               <p>
-                De la o singură revistă pentru mireasă până la exemplare pentru întregul grup —?
+                De la o singură revistă pentru mireasă până la exemplare pentru întregul grup,
                 fără limită de volum.
               </p>
               <div className="flex flex-col gap-4 sm:flex-row">
@@ -407,7 +398,7 @@ export function BacheloretteEventPage() {
             </h2>
             <p className="mt-4 text-base leading-7 text-paper/72 sm:text-lg">
               Costul depinde de numărul de exemplare și de specificul revistei. Poți
-              comanda orice volum —? de la un exemplar până la reviste pentru întregul grup.
+              comanda orice volum, de la un exemplar până la reviste pentru întregul grup.
             </p>
           </div>
 
@@ -416,7 +407,7 @@ export function BacheloretteEventPage() {
           </p>
 
           <div className="mt-4 grid gap-4 md:grid-cols-4">
-            {pricingPreview.map((tier) => (
+            {bachelorettePricingPreview.map((tier) => (
               <Card
                 key={tier.quantity}
                 className="rounded-[1.75rem] border border-white/10 bg-white/6 p-5"

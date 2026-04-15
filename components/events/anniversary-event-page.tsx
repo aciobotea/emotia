@@ -89,22 +89,7 @@ export function AnniversaryEventPage() {
                 >
                   <source src="/anniversary/anniversary-cover.mp4" type="video/mp4" />
                 </video>
-                <div className="absolute inset-0 bg-[linear-gradient(145deg,rgba(110,24,50,0.46),rgba(145,58,88,0.28),rgba(214,175,99,0.14))]" />
-                <div className="absolute inset-8 rounded-[2.3rem] border border-white/18 bg-[linear-gradient(180deg,rgba(255,255,255,0.12),rgba(255,255,255,0.04))] shadow-[inset_0_1px_0_rgba(255,255,255,0.18)]" />
-                <div className="relative flex h-full flex-col justify-between p-8 sm:p-10">
-                  <span className="self-start rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.32em] text-ivory">
-                    Preview editorial
-                  </span>
-
-                  <div className="ml-auto max-w-md rounded-[2rem] border border-white/18 bg-white/10 p-6 backdrop-blur-sm">
-                    <p className="text-xs font-semibold uppercase tracking-[0.3em] text-ivory/70">
-                      Pentru voi doi
-                    </p>
-                    <p className="mt-4 font-display text-4xl leading-tight text-ivory">
-                      Romantică, personală și construită din lucrurile care contează cu adevărat.
-                    </p>
-                  </div>
-                </div>
+                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(72,18,38,0.04),rgba(72,18,38,0.12))]" />
               </div>
             </div>
           </div>

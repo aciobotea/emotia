@@ -82,22 +82,7 @@ export function WeddingEventPage() {
                 >
                   <source src="/wedding/wedding-cover.mp4" type="video/mp4" />
                 </video>
-                <div className="absolute inset-0 bg-[linear-gradient(145deg,rgba(72,18,38,0.38),rgba(108,31,62,0.18),rgba(214,175,99,0.18))]" />
-                <div className="absolute inset-8 rounded-[2.3rem] border border-white/18 bg-[linear-gradient(180deg,rgba(255,255,255,0.12),rgba(255,255,255,0.04))] shadow-[inset_0_1px_0_rgba(255,255,255,0.18)]" />
-                <div className="relative flex h-full flex-col justify-between p-8 sm:p-10">
-                  <span className="self-start rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.32em] text-ivory">
-                    Preview vizual
-                  </span>
-
-                  <div className="ml-auto max-w-md rounded-[2rem] border border-white/18 bg-white/10 p-6 backdrop-blur-sm">
-                    <p className="text-xs font-semibold uppercase tracking-[0.3em] text-ivory/70">
-                      Pentru invitați și pentru voi
-                    </p>
-                    <p className="mt-4 font-display text-4xl leading-tight text-ivory">
-                      Elegantă, personală și gândită să fie răsfoită cu emoție.
-                    </p>
-                  </div>
-                </div>
+                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(72,18,38,0.04),rgba(72,18,38,0.12))]" />
               </div>
             </div>
           </div>
@@ -159,9 +144,6 @@ export function WeddingEventPage() {
                   Poate fi oferită ca mărturie sau așezată pe mese, ca parte din
                   experiența evenimentului. Este genul de detaliu pe care oamenii îl
                   răsfoiesc, îl păstrează și și-l amintesc.
-                </p>
-                <p className="mt-10 max-w-lg font-display text-3xl leading-tight text-wine sm:text-[2.3rem]">
-                  Se așază pe masă. Se ia acasă. Se păstrează.
                 </p>
               </div>
             </div>
@@ -336,7 +318,7 @@ export function WeddingEventPage() {
                 </p>
                 <p className="mt-4 text-base leading-8 text-olive-deep/74">
                   Fotografiile, textele și structura sunt adaptate astfel încât
-                  rezultatul să fie unic —? nu există două reviste la fel.
+                  rezultatul să fie unic, nu există două reviste la fel.
                 </p>
               </CardContent>
             </Card>
@@ -382,7 +364,7 @@ export function WeddingEventPage() {
 
             <div className="space-y-6 text-lg leading-9 text-olive-deep/76">
               <p>
-                De la un exemplar personal până la reviste pentru toți invitații —?
+                De la un exemplar personal până la reviste pentru toți invitații,
                 fără limită de volum.
               </p>
               <div className="flex flex-col gap-4 sm:flex-row">
@@ -415,7 +397,7 @@ export function WeddingEventPage() {
             </h2>
             <p className="mt-4 text-base leading-7 text-paper/72 sm:text-lg">
               Costul depinde de numărul de exemplare și de specificul revistei. Poți
-              comanda orice volum —? de la un exemplar până la reviste pentru întregul
+              comanda orice volum, de la un exemplar până la reviste pentru întregul
               eveniment.
             </p>
           </div>
