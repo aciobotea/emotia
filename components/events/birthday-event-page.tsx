@@ -403,17 +403,17 @@ export function BirthdayEventPage() {
             Prețuri orientative
           </p>
 
-          <div className="-mx-8 mt-4 flex gap-4 overflow-x-auto px-8 pb-3 [scrollbar-width:none] md:mx-0 md:grid md:grid-cols-4 md:overflow-visible md:px-0 md:pb-0 [&::-webkit-scrollbar]:hidden">
+          <div className="-mx-8 mt-4 grid auto-cols-[8.5rem] grid-flow-col gap-3 overflow-x-auto px-8 pb-3 [scrollbar-width:none] md:mx-0 md:grid-flow-row md:grid-cols-4 md:gap-4 md:overflow-visible md:px-0 md:pb-0 [&::-webkit-scrollbar]:hidden">
             {pricingPreview.map((tier) => (
               <Card
                 key={tier.quantity}
-                className="w-[13rem] shrink-0 rounded-[1.75rem] border border-white/10 bg-white/6 p-5 md:w-auto"
+                className="rounded-[1.4rem] border border-white/10 bg-white/6 p-3 md:rounded-[1.75rem] md:p-5"
               >
-                <CardContent className="p-5">
-                  <p className="text-xs font-semibold uppercase tracking-[0.28em] text-paper/65">
+                <CardContent className="p-3 md:p-5">
+                  <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-paper/65 md:text-xs md:tracking-[0.28em]">
                     {tier.quantity}
                   </p>
-                  <p className="mt-4 font-display text-4xl text-paper">{tier.price}</p>
+                  <p className="mt-2 font-display text-2xl text-paper md:mt-4 md:text-4xl">{tier.price}</p>
                 </CardContent>
               </Card>
             ))}
