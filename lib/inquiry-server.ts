@@ -4,18 +4,23 @@ import {
   type InquiryPayload,
 } from "@/lib/inquiry";
 
-const SMTP_USER = "email";
-const SMTP_APP_PASSWORD = "appPass";
+const SMTP_USER = process.env.SMTP_USER ?? "";
+const SMTP_APP_PASSWORD = process.env.SMTP_APP_PASSWORD ?? "";
 const INQUIRY_NOTIFICATION_TO = "lucy_baciu_2006@yahoo.com";
-const INQUIRY_NOTIFICATION_FROM = `"Emotia" <${SMTP_USER}>`;
 
-const transporter = nodemailer.createTransport({
-  service: "gmail",
-  auth: {
-    user: SMTP_USER,
-    pass: SMTP_APP_PASSWORD,
-  },
-});
+function getTransporter() {
+  if (!SMTP_USER || !SMTP_APP_PASSWORD) {
+    throw new Error("Lipsesc variabilele de mediu SMTP_USER sau SMTP_APP_PASSWORD.");
+  }
+
+  return nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      user: SMTP_USER,
+      pass: SMTP_APP_PASSWORD,
+    },
+  });
+}
 
 function buildInquiryText(payload: InquiryPayload) {
   return [
@@ -48,8 +53,10 @@ function buildInquiryHtml(payload: InquiryPayload) {
 }
 
 export async function sendInquiryEmail(payload: InquiryPayload) {
+  const transporter = getTransporter();
+
   await transporter.sendMail({
-    from: INQUIRY_NOTIFICATION_FROM,
+    from: `"Emotia" <${SMTP_USER}>`,
     to: INQUIRY_NOTIFICATION_TO,
     replyTo: payload.email,
     subject: `Cerere noua de oferta - ${payload.name}`,
