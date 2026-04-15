@@ -49,14 +49,14 @@ export function PricingInquiryForm() {
       };
 
       if (!response.ok) {
-        setError(result.error ?? "Cererea nu a putut fi trimisă.");
+        setError(result.error ?? "Cererea nu a putut fi trimisa.");
         return;
       }
 
-      setMessage(result.message ?? "Cererea a fost trimisă.");
+      setMessage(result.message ?? "Cererea a fost trimisa.");
       setValues(initialValues);
     } catch {
-      setError("A apărut o problemă la trimitere. Încearcă din nou.");
+      setError("A aparut o problema la trimitere. Incearca din nou.");
     } finally {
       setIsSubmitting(false);
     }
@@ -184,7 +184,7 @@ export function PricingInquiryForm() {
             <p className="text-[#d7f0cb]">{message}</p>
           ) : (
             <p className="text-paper/56">
-              Cererea ajunge direct în Google Sheets și trimite și notificare pe email.
+              Pentru moment, cererea este preluata de backend si afisata in consola serverului.
             </p>
           )}
         </div>
