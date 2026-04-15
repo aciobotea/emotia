@@ -1,123 +1,59 @@
-import { google } from "googleapis";
+import nodemailer from "nodemailer";
 import {
   getEventTypeLabel,
   type InquiryPayload,
 } from "@/lib/inquiry";
 
-type InquiryEnv = {
-  spreadsheetId: string;
-  sheetName: string;
-  serviceAccountEmail: string;
-  serviceAccountPrivateKey: string;
-  resendApiKey: string;
-  notificationTo: string;
-  notificationFrom: string;
-};
+const SMTP_USER = "email";
+const SMTP_APP_PASSWORD = "appPass";
+const INQUIRY_NOTIFICATION_TO = "lucy_baciu_2006@yahoo.com";
+const INQUIRY_NOTIFICATION_FROM = `"Emotia" <${SMTP_USER}>`;
 
-function getInquiryEnv(): InquiryEnv {
-  const spreadsheetId = process.env.GOOGLE_SHEETS_SPREADSHEET_ID ?? "";
-  const sheetName = process.env.GOOGLE_SHEETS_SHEET_NAME ?? "Cereri";
-  const serviceAccountEmail = process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL ?? "";
-  const serviceAccountPrivateKey =
-    process.env.GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY?.replace(/\\n/g, "\n") ?? "";
-  const resendApiKey = process.env.RESEND_API_KEY ?? "";
-  const notificationTo = process.env.INQUIRY_NOTIFICATION_TO ?? "";
-  const notificationFrom =
-    process.env.INQUIRY_NOTIFICATION_FROM ?? "Emotia <onboarding@resend.dev>";
+const transporter = nodemailer.createTransport({
+  service: "gmail",
+  auth: {
+    user: SMTP_USER,
+    pass: SMTP_APP_PASSWORD,
+  },
+});
 
-  const missing = [
-    !spreadsheetId && "GOOGLE_SHEETS_SPREADSHEET_ID",
-    !serviceAccountEmail && "GOOGLE_SERVICE_ACCOUNT_EMAIL",
-    !serviceAccountPrivateKey && "GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY",
-    !resendApiKey && "RESEND_API_KEY",
-    !notificationTo && "INQUIRY_NOTIFICATION_TO",
-  ].filter(Boolean);
-
-  if (missing.length > 0) {
-    throw new Error(`Lipsesc variabilele de mediu: ${missing.join(", ")}`);
-  }
-
-  return {
-    spreadsheetId,
-    sheetName,
-    serviceAccountEmail,
-    serviceAccountPrivateKey,
-    resendApiKey,
-    notificationTo,
-    notificationFrom,
-  };
+function buildInquiryText(payload: InquiryPayload) {
+  return [
+    "A intrat o noua cerere de oferta.",
+    "",
+    `Nume: ${payload.name}`,
+    `Email: ${payload.email}`,
+    `Telefon: ${payload.phone}`,
+    `Tip eveniment: ${getEventTypeLabel(payload.eventType)}`,
+    `Numar exemplare: ${payload.quantity}`,
+    `Data evenimentului: ${payload.eventDate}`,
+    "",
+    "Detalii:",
+    payload.details,
+  ].join("\n");
 }
 
-function formatInquiryTimestamp(date = new Date()) {
-  return new Intl.DateTimeFormat("ro-RO", {
-    dateStyle: "medium",
-    timeStyle: "short",
-    timeZone: "Europe/Bucharest",
-  }).format(date);
-}
-
-export async function appendInquiryToSheet(payload: InquiryPayload) {
-  const env = getInquiryEnv();
-  const auth = new google.auth.JWT({
-    email: env.serviceAccountEmail,
-    key: env.serviceAccountPrivateKey,
-    scopes: ["https://www.googleapis.com/auth/spreadsheets"],
-  });
-
-  const sheets = google.sheets({ version: "v4", auth });
-
-  await sheets.spreadsheets.values.append({
-    spreadsheetId: env.spreadsheetId,
-    range: `${env.sheetName}!A:H`,
-    valueInputOption: "USER_ENTERED",
-    requestBody: {
-      values: [
-        [
-          formatInquiryTimestamp(),
-          payload.name,
-          payload.email,
-          payload.phone,
-          getEventTypeLabel(payload.eventType),
-          payload.quantity,
-          payload.eventDate,
-          payload.details,
-        ],
-      ],
-    },
-  });
+function buildInquiryHtml(payload: InquiryPayload) {
+  return `
+    <h2>Cerere noua de oferta</h2>
+    <p><strong>Nume:</strong> ${payload.name}</p>
+    <p><strong>Email:</strong> ${payload.email}</p>
+    <p><strong>Telefon:</strong> ${payload.phone}</p>
+    <p><strong>Tip eveniment:</strong> ${getEventTypeLabel(payload.eventType)}</p>
+    <p><strong>Numar exemplare:</strong> ${payload.quantity}</p>
+    <p><strong>Data evenimentului:</strong> ${payload.eventDate}</p>
+    <p><strong>Detalii:</strong></p>
+    <p>${payload.details.replace(/\n/g, "<br />")}</p>
+  `;
 }
 
 export async function sendInquiryEmail(payload: InquiryPayload) {
-  const env = getInquiryEnv();
-  const response = await fetch("https://api.resend.com/emails", {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${env.resendApiKey}`,
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      from: env.notificationFrom,
-      to: [env.notificationTo],
-      reply_to: payload.email,
-      subject: `Cerere nouă de ofertă - ${payload.name}`,
-      text: [
-        "A intrat o nouă cerere de ofertă.",
-        "",
-        `Nume: ${payload.name}`,
-        `Email: ${payload.email}`,
-        `Telefon: ${payload.phone}`,
-        `Tip eveniment: ${getEventTypeLabel(payload.eventType)}`,
-        `Număr exemplare: ${payload.quantity}`,
-        `Data evenimentului: ${payload.eventDate}`,
-        "",
-        "Detalii:",
-        payload.details,
-      ].join("\n"),
-    }),
+  await transporter.sendMail({
+    from: INQUIRY_NOTIFICATION_FROM,
+    to: INQUIRY_NOTIFICATION_TO,
+    replyTo: payload.email,
+    subject: `Cerere noua de oferta - ${payload.name}`,
+    text: buildInquiryText(payload),
+    html: buildInquiryHtml(payload),
   });
-
-  if (!response.ok) {
-    const errorText = await response.text();
-    throw new Error(`Trimiterea emailului a eșuat: ${errorText}`);
-  }
 }

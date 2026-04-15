@@ -3,10 +3,7 @@ import {
   normalizeInquiryPayload,
   validateInquiryPayload,
 } from "@/lib/inquiry";
-import {
-  appendInquiryToSheet,
-  sendInquiryEmail,
-} from "@/lib/inquiry-server";
+import { sendInquiryEmail } from "@/lib/inquiry-server";
 
 export const runtime = "nodejs";
 
@@ -23,12 +20,12 @@ export async function POST(request: Request) {
       );
     }
 
-    await appendInquiryToSheet(payload);
+    console.log("Landing page inquiry received", payload);
     await sendInquiryEmail(payload);
 
     return NextResponse.json({
       success: true,
-      message: "Cererea a fost trimisă. Revenim curând cu o ofertă.",
+      message: "Cererea a fost trimisa. Revenim curand cu o oferta.",
     });
   } catch (error) {
     console.error("Inquiry submission failed", error);
@@ -38,7 +35,7 @@ export async function POST(request: Request) {
         error:
           error instanceof Error
             ? error.message
-            : "Cererea nu a putut fi trimisă acum.",
+            : "Cererea nu a putut fi trimisa acum.",
       },
       { status: 500 },
     );
