@@ -6,7 +6,7 @@ import {
 
 const SMTP_USER = process.env.SMTP_USER ?? "";
 const SMTP_APP_PASSWORD = process.env.SMTP_APP_PASSWORD ?? "";
-const INQUIRY_NOTIFICATION_TO = "lucy_baciu_2006@yahoo.com";
+const INQUIRY_NOTIFICATION_TO = "a.ciobotea23@gmail.com";
 
 function getTransporter() {
   if (!SMTP_USER || !SMTP_APP_PASSWORD) {
